@@ -3,20 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KASPERA Skopje — Social media management, digital marketing, web and software development. Recycle.mk, TradeFlow & premium client work.">
-  <meta name="theme-color" content="#fafafa">
+  <meta name="description" content="KASPERA Skopje — Social media management, digital marketing, web and software development. Recycle.mk, TradeFlow and client work across North Macedonia.">
+  <meta name="theme-color" content="#f6f7fc">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KASPERA — Digital Marketing & Development">
+  <meta property="og:description" content="Social media, digital marketing and software development from Skopje. Recycle.mk, TradeFlow and 20+ client projects.">
+  <meta property="og:image" content="assets/images/kaspera-full.png">
+  <meta name="twitter:card" content="summary_large_image">
   <title>KASPERA — Digital Marketing & Development</title>
   <link rel="icon" type="image/png" href="assets/images/kaspera-wordmark.png">
+  <link rel="apple-touch-icon" href="assets/images/kaspera-full.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="bg-atmosphere" aria-hidden="true">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-  </div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
   <header class="nav" id="nav">
     <div class="container nav-inner">
@@ -33,41 +38,99 @@
   <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
 
   <nav class="nav-links" id="navLinks" aria-label="Primary">
+    <span class="nav-indicator" id="navIndicator" aria-hidden="true"></span>
     <a href="#home" data-nav="home">Home</a>
     <a href="#services" data-nav="services">Services</a>
     <a href="#projects" data-nav="projects">Projects</a>
     <a href="#social" data-nav="social">Social Media</a>
+    <a href="#leadership" data-nav="leadership">Team</a>
     <a href="#contact" data-nav="contact">Contact</a>
   </nav>
 
   <main id="main">
     <!-- Hero -->
     <section id="home" class="hero section" data-section>
-      <div class="container hero-grid">
-        <div class="reveal">
-          <div class="hero-logo-wrap">
-            <img src="assets/images/kaspera-full.png" alt="KASPERA" class="hero-logo">
-          </div>
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-grid"></div>
+        <canvas class="hero-bg-canvas" id="heroCanvas"></canvas>
+        <svg class="hero-bg-lines" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="heroLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#5c6ff4" stop-opacity="0"/>
+              <stop offset="40%" stop-color="#5c6ff4" stop-opacity="0.7"/>
+              <stop offset="60%" stop-color="#a855f7" stop-opacity="0.7"/>
+              <stop offset="100%" stop-color="#e870c2" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path class="hero-stream hero-stream--1" d="M-40,180 C200,140 400,220 720,170 S1200,130 1480,190" fill="none" stroke="url(#heroLineGrad)" stroke-width="1"/>
+          <path class="hero-stream hero-stream--2" d="M-40,420 C280,380 520,460 820,400 S1180,350 1480,430" fill="none" stroke="url(#heroLineGrad)" stroke-width="1"/>
+          <path class="hero-stream hero-stream--3" d="M-40,640 C180,600 460,680 760,620 S1120,580 1480,650" fill="none" stroke="url(#heroLineGrad)" stroke-width="1"/>
+          <path class="hero-stream hero-stream--4" d="M-40,300 C320,260 580,340 900,280 S1260,240 1480,310" fill="none" stroke="url(#heroLineGrad)" stroke-width="1"/>
+          <path class="hero-stream hero-stream--5" d="M-40,520 C240,480 500,560 840,500 S1140,460 1480,540" fill="none" stroke="url(#heroLineGrad)" stroke-width="1"/>
+          <g class="hero-brackets" fill="none" stroke="rgba(92, 111, 244, 0.22)" stroke-width="1.25">
+            <path class="hero-bracket hero-bracket--tl" d="M52,52 L52,108 L108,108"/>
+            <path class="hero-bracket hero-bracket--tr" d="M1388,52 L1388,108 L1332,108"/>
+            <path class="hero-bracket hero-bracket--bl" d="M52,848 L52,792 L108,792"/>
+            <path class="hero-bracket hero-bracket--br" d="M1388,848 L1388,792 L1332,792"/>
+          </g>
+        </svg>
+        <div class="hero-bg-orbs" aria-hidden="true">
+          <span class="hero-orb hero-orb--1"></span>
+          <span class="hero-orb hero-orb--2"></span>
+          <span class="hero-orb hero-orb--3"></span>
+          <span class="hero-orb hero-orb--4"></span>
+          <span class="hero-orb hero-orb--5"></span>
+        </div>
+        <div class="hero-bg-bits" aria-hidden="true">
+          <span class="hero-bit hero-bit--1">{ init }</span>
+          <span class="hero-bit hero-bit--2">0x5c6f</span>
+          <span class="hero-bit hero-bit--3">:: deploy</span>
+          <span class="hero-bit hero-bit--4">// scale</span>
+          <span class="hero-bit hero-bit--5">&lt;/&gt;</span>
+          <span class="hero-bit hero-bit--6">npm run ship</span>
+        </div>
+        <div class="hero-bg-pulse" aria-hidden="true">
+          <span class="hero-pulse hero-pulse--1"></span>
+          <span class="hero-pulse hero-pulse--2"></span>
+          <span class="hero-pulse hero-pulse--3"></span>
+        </div>
+        <div class="hero-bg-dots" aria-hidden="true">
+          <span class="hero-dot hero-dot--1"></span>
+          <span class="hero-dot hero-dot--2"></span>
+          <span class="hero-dot hero-dot--3"></span>
+          <span class="hero-dot hero-dot--4"></span>
+        </div>
+        <div class="hero-bg-scan"><span class="hero-bg-scan-beam"></span></div>
+        <div class="hero-bg-vignette"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <p class="hero-eyebrow"><span class="hero-eyebrow-prompt" aria-hidden="true">&gt;</span> Skopje · North Macedonia</p>
           <h1 class="hero-title">
-            Grow brands.<br>
-            <span class="gradient-text">Build platforms.</span>
+            Marketing that scales.<br>
+            <span class="hero-typewriter" id="heroTypewriter" aria-live="polite">
+              <span class="hero-typewriter-sizer text-gradient" aria-hidden="true">Platforms that scale.</span>
+              <span class="hero-typewriter-line">
+                <span class="hero-typewriter-text text-gradient" id="heroTypewriterText">Software that ships.</span><span class="hero-typewriter-cursor" aria-hidden="true"></span>
+              </span>
+            </span>
           </h1>
-          <p class="hero-lead">
-            Social media, digital marketing and brand growth — from daily content to flagship platforms that scale across Macedonia and beyond.
-          </p>
+          <p class="hero-lead">Website and software development, web applications, social media management, and digital marketing — for companies across North Macedonia.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">
-              View our work
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a class="btn btn-secondary" href="#contact">Get in touch</a>
+            <a class="btn btn-primary" href="#projects">View work</a>
+            <a class="btn btn-secondary" href="#contact">Start a project</a>
           </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay-1" aria-hidden="true">
+          <img src="assets/images/kaspera-full.png" alt="" class="hero-mark">
         </div>
       </div>
     </section>
 
     <!-- Trusted by carousel -->
-    <div class="logo-carousel" aria-label="Clients and partners">
+    <div class="logo-carousel-wrap">
+      <p class="logo-carousel-label">Trusted by 20+ brands across North Macedonia</p>
+      <div class="logo-carousel" aria-label="Clients and partners">
       <div class="logo-carousel-track">
         <div class="logo-carousel-slide">
           <div class="logo-carousel-item"><img src="assets/images/kaspera-wordmark.png" alt="KASPERA"></div>
@@ -117,99 +180,22 @@
         </div>
       </div>
     </div>
-
-    <!-- Partnership with Alimi Digital — only mention on site -->
-    <section id="partnership" class="partnership section" data-section aria-labelledby="partnership-title">
-      <div class="container reveal">
-        <div class="partnership-inner">
-          <header class="partnership-header">
-            <span class="section-label">Development partner</span>
-            <h2 id="partnership-title" class="section-title">Software & web development by Alimi Digital</h2>
-            <p>KASPERA leads marketing and social media. For websites, web apps and custom software, our dedicated development studio <strong>Alimi Digital</strong> delivers the build — premium design, clean code and production-ready platforms.</p>
-          </header>
-
-          <div class="partnership-brands">
-            <div class="partnership-brand">
-              <img src="assets/images/kaspera-full.png" alt="KASPERA">
-              <span>Marketing & social media</span>
-            </div>
-            <span class="partnership-connector" aria-hidden="true">×</span>
-            <div class="partnership-brand">
-              <img src="assets/images/projects/LOGO.png" alt="Alimi Digital">
-              <span>Software & web development</span>
-            </div>
-          </div>
-
-          <div class="partnership-columns">
-            <div class="partnership-col">
-              <h3>KASPERA handles</h3>
-              <p>Your brand presence, audience growth and day-to-day digital marketing.</p>
-              <ul>
-                <li>Social media management</li>
-                <li>Content strategy & campaigns</li>
-                <li>Community & brand voice</li>
-                <li>Client communication & reporting</li>
-              </ul>
-            </div>
-            <div class="partnership-col">
-              <h3>Alimi Digital builds</h3>
-              <p>Websites, applications and software — the same team behind Recycle.mk, TradeFlow and 20+ premium sites.</p>
-              <ul>
-                <li>Website design & development</li>
-                <li>Web & mobile applications</li>
-                <li>Custom software platforms</li>
-                <li>UI/UX, performance & maintenance</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="partnership-contact">
-            <h3>Alimi Digital — development inquiries</h3>
-            <div class="partnership-contact-grid">
-              <div class="partnership-contact-item">
-                <strong>Email</strong>
-                <a href="mailto:alimiatdhe9@gmail.com">alimiatdhe9@gmail.com</a>
-              </div>
-              <div class="partnership-contact-item">
-                <strong>Phone</strong>
-                <a href="tel:+38971875840">+389 71 875 840</a>
-              </div>
-              <div class="partnership-contact-item">
-                <strong>Website</strong>
-                <a href="https://alimi-digital-solutions.vercel.app/" target="_blank" rel="noopener noreferrer">alimi-digital-solutions.vercel.app</a>
-              </div>
-              <div class="partnership-contact-item">
-                <strong>Location</strong>
-                <span>Skopje, North Macedonia</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="partnership-actions">
-            <a class="btn btn-primary" href="https://alimi-digital-solutions.vercel.app/" target="_blank" rel="noopener noreferrer">
-              Visit Alimi Digital
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-            </a>
-            <a class="btn btn-secondary" href="#contact">Contact KASPERA</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
     <!-- Services -->
-    <section id="services" class="section" data-section>
+    <div class="section-break" aria-hidden="true"><span></span></div>
+    <section id="services" class="section section--surface" data-section data-animate="up">
       <div class="container">
         <header class="section-header center reveal">
-          <span class="section-label">What we do</span>
-          <h2 class="section-title">What KASPERA delivers</h2>
-          <p class="section-intro">Marketing, content and digital growth for brands across Macedonia.</p>
+          <span class="section-label">Capabilities</span>
+          <h2 class="section-title title-reveal">What we run and what we build</h2>
+          <p class="section-intro">Two focused teams — marketing operations and software delivery — under one roof in Skopje.</p>
         </header>
 
         <div class="services-grid">
-          <article class="service-card reveal">
-            <div class="service-card-glow" aria-hidden="true"></div>
+          <article class="service-card reveal reveal-from-left">
             <div class="service-card-head">
-              <div class="service-icon" aria-hidden="true">📱</div>
+              <span class="service-num">01</span>
               <span class="service-tag">Marketing</span>
             </div>
             <h3>Digital marketing</h3>
@@ -223,14 +209,13 @@
             </ul>
           </article>
 
-          <article class="service-card reveal reveal-delay-1">
-            <div class="service-card-glow" aria-hidden="true"></div>
+          <article class="service-card reveal reveal-from-right reveal-delay-1">
             <div class="service-card-head">
-              <div class="service-icon" aria-hidden="true">⚡</div>
-              <span class="service-tag">Development</span>
+              <span class="service-num">02</span>
+              <span class="service-tag">Engineering</span>
             </div>
             <h3>Websites & software</h3>
-            <p>Premium websites, web apps and custom platforms — from concept to launch and long-term support.</p>
+            <p>Production websites, web apps and custom platforms — from concept to launch and long-term support.</p>
             <ul class="service-list">
               <li>Website design & development</li>
               <li>Web & mobile applications</li>
@@ -243,20 +228,28 @@
       </div>
     </section>
 
+    <div class="section-break section-break--wide" aria-hidden="true"><span></span></div>
+
     <!-- Flagship Projects -->
-    <section id="projects" class="section showcase" data-section>
+    <section id="projects" class="section showcase" data-section data-animate="scale">
       <div class="container">
         <header class="section-header reveal">
-          <span class="section-label">Flagship projects</span>
-          <h2 class="section-title">Built to scale. Designed to impress.</h2>
-          <p class="section-intro">National-scale platforms and enterprise software built for real-world impact.</p>
+          <span class="section-label">Selected work</span>
+          <h2 class="section-title title-reveal">Platforms and products</h2>
+          <p class="section-intro">National-scale systems and production software — not mockups.</p>
         </header>
 
+        <nav class="project-jump reveal" aria-label="Jump to project">
+          <a href="#project-recycle">Recycle.mk</a>
+          <a href="#project-tradeflow">TradeFlow</a>
+          <a href="#project-clients">Client sites</a>
+        </nav>
+
         <!-- Recycle.mk -->
-        <article class="showcase-featured reveal">
+        <article id="project-recycle" class="showcase-featured reveal reveal-scale">
           <div class="showcase-hero">
             <span class="showcase-badge">Largest in Macedonia</span>
-            <img src="https://www.recycle.mk/assets/images/thumbnail.png" alt="Recycle.mk — national recycling platform with interactive map">
+            <img src="https://www.recycle.mk/assets/images/thumbnail.png" alt="Recycle.mk — national recycling platform with interactive map" loading="lazy" decoding="async">
           </div>
           <div class="showcase-body">
             <h3>Recycle.mk — National Recycling Platform</h3>
@@ -302,14 +295,14 @@
         </article>
 
         <!-- TradeFlow -->
-        <article class="showcase-featured reveal">
+        <article id="project-tradeflow" class="showcase-featured reveal reveal-scale">
           <div class="showcase-hero">
             <span class="showcase-badge">Enterprise logistics</span>
-            <img src="assets/images/tradeflow-hero.png" alt="TradeFlow — Logistics. Made. Easier. Customs and cargo operations platform">
+            <img src="assets/images/tradeflow-hero.png" alt="TradeFlow — Logistics. Made. Easier. Customs and cargo operations platform" loading="lazy" decoding="async">
           </div>
           <div class="showcase-body">
             <h3>TradeFlow — Customs & Logistics Command Center</h3>
-            <p>TradeFlow modernizes outdated customs and logistics desktop systems into a responsive, premium web platform for freight forwarders, shipping agencies and trade companies. One unified workspace for declarations, shipment cases, documents, validation workflows and operational analytics.</p>
+            <p>TradeFlow modernizes outdated customs and logistics desktop systems into a responsive web platform for freight forwarders, shipping agencies and trade companies. One unified workspace for declarations, shipment cases, documents, validation workflows and operational analytics.</p>
 
             <div class="feature-grid">
               <div class="feature-item">
@@ -340,17 +333,17 @@
 
             <div class="showcase-grid three reveal">
               <a href="https://chipper-mousse-08aae6.netlify.app/dashboard" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/tradeflow-hero.png" alt="TradeFlow hero — Logistics made easier with command center dashboard">
+                <img src="assets/images/tradeflow-hero.png" alt="TradeFlow hero — Logistics made easier with command center dashboard" loading="lazy" decoding="async">
               </a>
               <a href="https://chipper-mousse-08aae6.netlify.app/dashboard" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/tradeflow-workflows.png" alt="TradeFlow cases page and create case workflow">
+                <img src="assets/images/tradeflow-workflows.png" alt="TradeFlow cases page and create case workflow" loading="lazy" decoding="async">
               </a>
               <a href="https://chipper-mousse-08aae6.netlify.app/dashboard" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/tradeflow-dashboard.png" alt="TradeFlow unified dashboard command center">
+                <img src="assets/images/tradeflow-dashboard.png" alt="TradeFlow unified dashboard command center" loading="lazy" decoding="async">
               </a>
             </div>
 
-            <div class="feature-pills" style="margin-top:24px;">
+            <div class="feature-pills feature-pills--spaced">
               <span class="pill">Customs declarations</span>
               <span class="pill">Import / Export / Transit</span>
               <span class="pill">Document handling</span>
@@ -358,7 +351,7 @@
               <span class="pill">Cargo forwarding</span>
             </div>
 
-            <a class="btn btn-primary" href="https://chipper-mousse-08aae6.netlify.app/dashboard" target="_blank" rel="noopener noreferrer" style="margin-top:24px;">
+            <a class="btn btn-primary btn-spaced" href="https://chipper-mousse-08aae6.netlify.app/dashboard" target="_blank" rel="noopener noreferrer">
               Explore live demo
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
             </a>
@@ -366,20 +359,32 @@
         </article>
 
         <!-- Client websites -->
-        <header class="section-header reveal" style="margin-top:64px;">
-          <span class="section-label">Client websites</span>
-          <h2 class="section-title">Premium websites & digital experiences</h2>
-          <p class="section-intro">A selection of websites and brands we've helped bring online.</p>
+        <header id="project-clients" class="section-header reveal section-header--spaced">
+          <span class="section-label">Client sites</span>
+          <h2 class="section-title">Websites we've shipped</h2>
+          <p class="section-intro">A sample of brands brought online by our development team.</p>
         </header>
 
-        <div class="cards-grid cards-grid--clients reveal">
+        <div class="cards-grid cards-grid--clients reveal reveal-stagger">
+          <article class="project-card project-card--flagship">
+            <div class="project-card-image">
+              <img src="https://www.recycle.mk/assets/images/logo.png" alt="Recycle.mk logo" loading="lazy" decoding="async">
+            </div>
+            <div class="project-card-body">
+              <span class="project-badge">Flagship</span>
+              <h3>Recycle.mk</h3>
+              <p>National recycling platform connecting citizens, recyclers and four waste-management systems across North Macedonia.</p>
+              <a class="project-link" href="https://www.recycle.mk/" target="_blank" rel="noopener noreferrer">Visit recycle.mk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+            </div>
+          </article>
+
           <article class="project-card">
             <div class="project-card-image">
               <img src="assets/images/logos/mhra.png" alt="MHRA logo" loading="lazy" decoding="async">
             </div>
             <div class="project-card-body">
               <h3>MHRA</h3>
-              <p>Macedonia's leading HR association — premium events connecting industry leaders globally.</p>
+              <p>North Macedonia's HR association — events, membership and industry programs.</p>
               <a class="project-link" href="https://www.mhra.mk" target="_blank" rel="noopener noreferrer">Visit mhra.mk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></a>
             </div>
           </article>
@@ -390,7 +395,7 @@
             </div>
             <div class="project-card-body">
               <h3>MHB Events</h3>
-              <p>Exclusive masterclass on balance, success and well-being for professionals.</p>
+              <p>Professional masterclass events on leadership and well-being.</p>
               <a class="project-link" href="https://www.mhbevents.mk" target="_blank" rel="noopener noreferrer">Visit mhbevents.mk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></a>
             </div>
           </article>
@@ -401,7 +406,7 @@
             </div>
             <div class="project-card-body">
               <h3>MHRA Conference</h3>
-              <p>2025 Leadership Conference — a premier global gathering on organizational health.</p>
+              <p>2025 leadership conference on organizational health.</p>
               <a class="project-link" href="https://mhraconference.mk" target="_blank" rel="noopener noreferrer">Visit mhraconference.mk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></a>
             </div>
           </article>
@@ -423,7 +428,7 @@
             </div>
             <div class="project-card-body">
               <h3>Euroles</h3>
-              <p>Premium window manufacturer from North Macedonia — first-class products across Europe.</p>
+              <p>Window manufacturer serving markets across Europe.</p>
               <a class="project-link" href="https://euroles.com.mk" target="_blank" rel="noopener noreferrer">Visit euroles.com.mk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></a>
             </div>
           </article>
@@ -434,7 +439,7 @@
             </div>
             <div class="project-card-body">
               <h3>Letto Foods</h3>
-              <p>Macedonia's snack excellence — premium chips, corn snacks and sweet treats since 2008.</p>
+              <p>Snack brand — chips, corn snacks and sweets since 2008.</p>
               <a class="project-link" href="https://lettofoods.mk" target="_blank" rel="noopener noreferrer">Visit lettofoods.mk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></a>
             </div>
           </article>
@@ -445,7 +450,7 @@
             </div>
             <div class="project-card-body">
               <h3>Illyrians</h3>
-              <p>North Macedonia's premier motorcycle and airsoft community.</p>
+              <p>Motorcycle and airsoft community based in North Macedonia.</p>
               <a class="project-link" href="https://illyrians.mk" target="_blank" rel="noopener noreferrer">Visit illyrians.mk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></a>
             </div>
           </article>
@@ -464,80 +469,209 @@
       </div>
     </section>
 
+    <div class="section-break" aria-hidden="true"><span></span></div>
+
     <!-- Social Media Management -->
-    <section id="social" class="section" data-section>
+    <section id="social" class="section section--surface" data-section data-animate="left">
       <div class="container">
         <header class="section-header center reveal">
-          <span class="section-label">Social media management</span>
-          <h2 class="section-title">Brands we manage daily</h2>
-          <p class="section-intro">Click any profile to visit the live Facebook page. KASPERA handles content, community and brand presence.</p>
+          <span class="section-label">Social operations</span>
+          <h2 class="section-title">Accounts we manage</h2>
+          <p class="section-intro">Daily content, community and brand presence on Facebook.</p>
         </header>
 
-        <div class="social-grid reveal">
+        <p class="social-scroll-hint reveal" aria-hidden="true">Swipe to explore →</p>
+        <div class="social-grid reveal reveal-stagger">
           <a class="social-card" href="https://www.facebook.com/profile.php?id=61590197462774" target="_blank" rel="noopener noreferrer" aria-label="Sara Kitchen Skopje on Facebook">
-            <img src="assets/images/sara-kitchen.png" alt="Sara Kitchen Skopje Facebook page">
+            <img src="assets/images/sara-kitchen.png" alt="Sara Kitchen Skopje Facebook page" loading="lazy" decoding="async">
             <div class="social-card-overlay">
               <h3>Sara Kitchen</h3>
               <span>Homemade taste with love · Skopje</span>
             </div>
-            <span class="social-card-hover">View on Facebook →</span>
+            <span class="social-card-hover">Open Facebook</span>
           </a>
 
           <a class="social-card" href="https://www.facebook.com/profile.php?id=61587133397522" target="_blank" rel="noopener noreferrer" aria-label="VELTEK on Facebook">
-            <img src="assets/images/veltek.jpg" alt="VELTEK Facebook page">
+            <img src="assets/images/veltek.jpg" alt="VELTEK Facebook page" loading="lazy" decoding="async">
             <div class="social-card-overlay">
               <h3>VELTEK</h3>
               <span>Managed by KASPERA</span>
             </div>
-            <span class="social-card-hover">View on Facebook →</span>
+            <span class="social-card-hover">Open Facebook</span>
           </a>
 
           <a class="social-card" href="https://www.facebook.com/profile.php?id=61579846023187" target="_blank" rel="noopener noreferrer" aria-label="KUKOM MK on Facebook">
-            <img src="assets/images/kukom-mk.png" alt="KUKOM MK Facebook page">
+            <img src="assets/images/kukom-mk.png" alt="KUKOM MK Facebook page" loading="lazy" decoding="async">
             <div class="social-card-overlay">
               <h3>KUKOM MK</h3>
               <span>Managed by KASPERA</span>
             </div>
-            <span class="social-card-hover">View on Facebook →</span>
+            <span class="social-card-hover">Open Facebook</span>
           </a>
 
           <a class="social-card" href="https://www.facebook.com/profile.php?id=61560017742315" target="_blank" rel="noopener noreferrer" aria-label="MG KOMPANIJA on Facebook">
-            <img src="assets/images/mg-kompanija.png" alt="MG KOMPANIJA Facebook page">
+            <img src="assets/images/mg-kompanija.png" alt="MG KOMPANIJA Facebook page" loading="lazy" decoding="async">
             <div class="social-card-overlay">
               <h3>MG KOMPANIJA</h3>
               <span>Managed by KASPERA</span>
             </div>
-            <span class="social-card-hover">View on Facebook →</span>
+            <span class="social-card-hover">Open Facebook</span>
           </a>
 
           <a class="social-card" href="https://www.facebook.com/profile.php?id=61556810735247" target="_blank" rel="noopener noreferrer" aria-label="HORTIKO on Facebook">
-            <img src="assets/images/hortiko.png" alt="HORTIKO Facebook page">
+            <img src="assets/images/hortiko.png" alt="HORTIKO Facebook page" loading="lazy" decoding="async">
             <div class="social-card-overlay">
               <h3>HORTIKO</h3>
               <span>Managed by KASPERA</span>
             </div>
-            <span class="social-card-hover">View on Facebook →</span>
+            <span class="social-card-hover">Open Facebook</span>
           </a>
 
           <a class="social-card" href="https://www.facebook.com/profile.php?id=61590720532436" target="_blank" rel="noopener noreferrer" aria-label="SCS on Facebook">
-            <img src="assets/images/scs.png" alt="SCS Facebook page">
+            <img src="assets/images/scs.png" alt="SCS Facebook page" loading="lazy" decoding="async">
             <div class="social-card-overlay">
               <h3>SCS</h3>
               <span>Managed by KASPERA</span>
             </div>
-            <span class="social-card-hover">View on Facebook →</span>
+            <span class="social-card-hover">Open Facebook</span>
           </a>
         </div>
       </div>
     </section>
 
+    <div class="section-break section-break--wide" aria-hidden="true"><span></span></div>
+
+    <!-- Partnership with Alimi Digital -->
+    <section id="partnership" class="partnership section section--elevated" data-section data-animate="up" aria-labelledby="partnership-title">
+      <div class="container reveal">
+        <div class="partnership-inner">
+          <header class="partnership-header">
+            <span class="section-label">Development partner</span>
+            <h2 id="partnership-title" class="section-title title-reveal">Built by Alimi Digital</h2>
+            <p>KASPERA leads marketing and day-to-day brand operations. For websites, applications and custom software, our dedicated studio <strong>Alimi Digital</strong> handles design, engineering and production delivery.</p>
+          </header>
+
+          <div class="partnership-brands">
+            <div class="partnership-brand reveal reveal-from-left">
+              <div class="partnership-brand-img">
+                <img src="assets/images/kaspera-full.png" alt="KASPERA">
+              </div>
+              <span>Marketing & social media</span>
+            </div>
+            <div class="partnership-connector" aria-hidden="true"><span>×</span></div>
+            <div class="partnership-brand reveal reveal-from-right">
+              <div class="partnership-brand-img">
+                <img src="assets/images/projects/LOGO.png" alt="Alimi Digital">
+              </div>
+              <span>Software & web development</span>
+            </div>
+          </div>
+
+          <div class="partnership-columns">
+            <div class="partnership-col reveal reveal-from-left">
+              <h3>KASPERA handles</h3>
+              <p>Your brand presence, audience growth and day-to-day digital marketing.</p>
+              <ul>
+                <li>Social media management</li>
+                <li>Content strategy & campaigns</li>
+                <li>Community & brand voice</li>
+                <li>Client communication & reporting</li>
+              </ul>
+            </div>
+            <div class="partnership-col reveal reveal-from-right reveal-delay-1">
+              <h3>Alimi Digital builds</h3>
+              <p>Websites, applications and software — the same team behind Recycle.mk, TradeFlow and 20+ production sites.</p>
+              <ul>
+                <li>Website design & development</li>
+                <li>Web & mobile applications</li>
+                <li>Custom software platforms</li>
+                <li>UI/UX, performance & maintenance</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="partnership-contact reveal">
+            <header class="partnership-contact-header">
+              <span class="partnership-contact-label">Alimi Digital</span>
+              <h3>Development inquiries</h3>
+            </header>
+            <dl class="partnership-contact-list">
+              <div class="partnership-contact-row">
+                <dt>Email</dt>
+                <dd><a href="mailto:alimiatdhe9@gmail.com">alimiatdhe9@gmail.com</a></dd>
+              </div>
+              <div class="partnership-contact-row">
+                <dt>Phone</dt>
+                <dd><a href="tel:+38971875840">+389 71 875 840</a></dd>
+              </div>
+              <div class="partnership-contact-row">
+                <dt>Website</dt>
+                <dd><a href="https://alimi-digital-solutions.vercel.app/" target="_blank" rel="noopener noreferrer">alimi-digital-solutions.vercel.app</a></dd>
+              </div>
+              <div class="partnership-contact-row">
+                <dt>Location</dt>
+                <dd>Skopje, North Macedonia</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="partnership-actions reveal">
+            <a class="btn btn-primary" href="https://alimi-digital-solutions.vercel.app/" target="_blank" rel="noopener noreferrer">
+              Visit Alimi Digital
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+            <a class="btn btn-secondary" href="#contact">Contact KASPERA</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-break" aria-hidden="true"><span></span></div>
+
+    <!-- Leadership -->
+    <section id="leadership" class="section leadership section--tint" data-section data-animate="up" aria-labelledby="leadership-title">
+      <div class="container">
+        <header class="section-header center reveal">
+          <span class="section-label">Leadership</span>
+          <h2 id="leadership-title" class="section-title title-reveal">The team</h2>
+          <p class="section-intro">Strategy and engineering at KASPERA.</p>
+        </header>
+
+        <div class="leadership-grid">
+          <article class="leader-card reveal reveal-from-left">
+            <div class="leader-portrait leader-portrait--ceo">
+              <img src="assets/images/darko-mickoski.png" alt="Darko Mickoski — CEO at Kaspera" width="1000" height="1000" loading="lazy">
+            </div>
+            <div class="leader-info">
+              <h3>Darko Mickoski</h3>
+              <p class="leader-role">CEO at Kaspera</p>
+              <p class="leader-bio">Brand strategy, marketing operations and client growth.</p>
+            </div>
+          </article>
+
+          <article class="leader-card reveal reveal-from-right reveal-delay-1">
+            <div class="leader-portrait">
+              <img src="assets/images/atdhe-alimi.png" alt="Atdhe Alimi — CTO at Kaspera" width="1000" height="1000" loading="lazy">
+            </div>
+            <div class="leader-info">
+              <h3>Atdhe Alimi</h3>
+              <p class="leader-role">CTO at Kaspera</p>
+              <p class="leader-bio">Engineering, product development and platform delivery.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-break section-break--cta" aria-hidden="true"><span></span></div>
+
     <!-- Contact -->
-    <section id="contact" class="section" data-section>
+    <section id="contact" class="section section--cta" data-section data-animate="scale">
       <div class="container">
         <header class="section-header center reveal">
           <span class="section-label">Contact</span>
-          <h2 class="section-title">Let's build something together</h2>
-          <p class="section-intro">Tell us about your project — marketing, social media or a new website.</p>
+          <h2 class="section-title title-reveal">Tell us about your project</h2>
+          <p class="section-intro">Marketing, social media or a new website — we'll point you to the right team.</p>
         </header>
 
         <div class="contact-grid reveal">
@@ -554,88 +688,55 @@
               <label for="message">Message</label>
               <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-large" style="width:100%;">
+            <button type="submit" class="btn btn-primary btn-large btn-full">
               Send message
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
             </button>
+            <p class="form-note">We typically respond within one business day.</p>
           </form>
 
           <div class="contact-info">
             <div class="contact-item">
-              <div class="contact-item-icon" aria-hidden="true">📍</div>
               <div>
                 <h4>KASPERA — Skopje</h4>
                 <p>Христо Смирненски 6p.12A/1-1<br>Centar, Skopje<br>North Macedonia</p>
               </div>
             </div>
             <div class="contact-item">
-              <div class="contact-item-icon" aria-hidden="true">🏢</div>
               <div>
                 <h4>Company details</h4>
-                <p>EDB: 4080026637986<br>EMBS: 7923007</p>
+                <p class="meta-value">EDB: 4080026637986<br>EMBS: 7923007</p>
               </div>
             </div>
             <div class="contact-item">
-              <div class="contact-item-icon" aria-hidden="true">📱</div>
               <div>
                 <h4>Phone</h4>
-                <a href="tel:+38971875840">+389 71 875 840</a>
+                <a class="meta-value" href="tel:+38971875840">+389 71 875 840</a>
               </div>
             </div>
             <div class="contact-item">
-              <div class="contact-item-icon" aria-hidden="true">💻</div>
               <div>
                 <h4>Software development</h4>
-                <p>See our <a href="#partnership" style="color:var(--blue);font-weight:500;">development partner section</a> for web & app inquiries.</p>
+                <p>Web and app inquiries via our <a href="#partnership">development partner section</a>.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Leadership -->
-    <section id="leadership" class="section leadership" data-section aria-labelledby="leadership-title">
-      <div class="container">
-        <header class="section-header center reveal">
-          <span class="section-label">Leadership</span>
-          <h2 id="leadership-title" class="section-title">Meet the team</h2>
-          <p class="section-intro">The people behind KASPERA — strategy, vision and technology working as one.</p>
-        </header>
-
-        <div class="leadership-grid">
-          <article class="leader-card reveal">
-            <div class="leader-portrait leader-portrait--ceo">
-              <div class="leader-portrait-glow" aria-hidden="true"></div>
-              <img src="assets/images/darko-mickoski.png" alt="Darko Mickoski — CEO at Kaspera" width="1000" height="1000" loading="lazy">
-            </div>
-            <div class="leader-info">
-              <h3>Darko Mickoski</h3>
-              <p class="leader-role">CEO at Kaspera</p>
-            </div>
-          </article>
-
-          <article class="leader-card reveal reveal-delay-1">
-            <div class="leader-portrait">
-              <div class="leader-portrait-glow" aria-hidden="true"></div>
-              <img src="assets/images/atdhe-alimi.png" alt="Atdhe Alimi — CTO at Kaspera" width="1000" height="1000" loading="lazy">
-            </div>
-            <div class="leader-info">
-              <h3>Atdhe Alimi</h3>
-              <p class="leader-role">CTO at Kaspera</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/kaspera-wordmark.png" alt="KASPERA" class="footer-logo" width="140" height="36" loading="lazy">
+        <p class="footer-tagline">Marketing &amp; software from Skopje.</p>
+      </div>
       <nav class="footer-links" aria-label="Footer">
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
         <a href="#social">Social Media</a>
+        <a href="#leadership">Team</a>
         <a href="#partnership">Development</a>
         <a href="https://www.recycle.mk/" target="_blank" rel="noopener noreferrer">Recycle.mk</a>
         <a href="https://chipper-mousse-08aae6.netlify.app/dashboard" target="_blank" rel="noopener noreferrer">TradeFlow Demo</a>
@@ -644,6 +745,12 @@
     </div>
   </footer>
 
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="assets/js/hero-bg.js" defer></script>
+  <script src="assets/js/hero-typewriter.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>
