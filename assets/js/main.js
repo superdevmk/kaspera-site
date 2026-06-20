@@ -111,22 +111,14 @@
   const sectionBreaks = document.querySelectorAll(".section-break");
   const projectJumpLinks = document.querySelectorAll(".project-jump a");
   const projectAnchors = ["project-recycle", "project-tradeflow", "project-clients"];
+  const currentPage = document.body.dataset.page;
 
-  const navObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          navItems.forEach((item) => {
-            item.classList.toggle("active", item.dataset.nav === entry.target.id);
-          });
-          updateNavIndicator();
-        }
-      });
-    },
-    { rootMargin: "-40% 0px -55% 0px", threshold: 0.01 }
-  );
-
-  sections.forEach((section) => navObserver.observe(section));
+  if (currentPage) {
+    navItems.forEach((item) => {
+      item.classList.toggle("active", item.dataset.nav === currentPage);
+    });
+    updateNavIndicator();
+  }
 
   const sectionInViewObserver = new IntersectionObserver(
     (entries) => {

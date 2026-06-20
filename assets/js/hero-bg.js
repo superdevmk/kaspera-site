@@ -13,13 +13,18 @@
 
   let width = 0;
   let height = 0;
+  let lastWidth = 0;
   let dpr = 1;
   let nodes = [];
   let sparks = [];
   let rafId = 0;
+  let resizeTimer = 0;
   let mouse = { x: 0.5, y: 0.5, active: false };
 
-  const nodeCount = () => (width < 640 ? 32 : width < 1024 ? 48 : 64);
+  const isMobile = () => window.matchMedia("(max-width: 899px)").matches;
+  const usePointer = () => !isMobile() && window.matchMedia("(pointer: fine)").matches;
+
+  const nodeCount = () => (width < 640 ? 28 : width < 1024 ? 42 : 56);
   const linkDistance = () => (width < 640 ? 110 : 150);
 
   const rand = (min, max) => min + Math.random() * (max - min);
@@ -29,29 +34,46 @@
     nodes = Array.from({ length: count }, (_, index) => ({
       x: Math.random() * width,
       y: Math.random() * height,
-      vx: rand(-0.28, 0.28),
-      vy: rand(-0.28, 0.28),
-      r: rand(1.2, 2.6),
+      vx: rand(-0.22, 0.22),
+      vy: rand(-0.22, 0.22),
+      r: rand(1.2, 2.4),
       color: colors.node[Math.floor(Math.random() * colors.node.length)],
       pulse: rand(0, Math.PI * 2),
-      pulseSpeed: rand(0.015, 0.035),
-      sparkEvery: 120 + Math.floor(Math.random() * 180),
+      pulseSpeed: rand(0.012, 0.028),
+      sparkEvery: 160 + Math.floor(Math.random() * 200),
       sparkCounter: index * 17,
     }));
   };
 
   const resize = () => {
     dpr = Math.min(window.devicePixelRatio || 1, 2);
-    const rect = hero.getBoundingClientRect();
-    width = rect.width;
-    height = rect.height;
+    const nextWidth = Math.max(hero.offsetWidth, 1);
+    const widthChanged = Math.abs(nextWidth - lastWidth) > 6;
+
+    if (isMobile() && width > 0 && !widthChanged) {
+      return;
+    }
+
+    const nextHeight = Math.max(hero.offsetHeight, 1);
+
+    width = nextWidth;
+    height = nextHeight;
     canvas.width = Math.floor(width * dpr);
     canvas.height = Math.floor(height * dpr);
     canvas.style.width = `${width}px`;
     canvas.style.height = `${height}px`;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    buildNodes();
-    sparks = [];
+
+    if (widthChanged || nodes.length === 0) {
+      buildNodes();
+      sparks = [];
+      lastWidth = width;
+    }
+  };
+
+  const scheduleResize = () => {
+    window.clearTimeout(resizeTimer);
+    resizeTimer = window.setTimeout(resize, 180);
   };
 
   const lineRgb = [
@@ -61,16 +83,16 @@
   ];
 
   const spawnSpark = (node) => {
-    if (sparks.length > 24) return;
+    if (isMobile() || sparks.length > 20) return;
     const angle = rand(0, Math.PI * 2);
-    const speed = rand(0.4, 1.2);
+    const speed = rand(0.35, 0.9);
     sparks.push({
       x: node.x,
       y: node.y,
       vx: Math.cos(angle) * speed,
       vy: Math.sin(angle) * speed,
       life: 1,
-      decay: rand(0.012, 0.022),
+      decay: rand(0.012, 0.02),
       color: node.color,
     });
   };
@@ -92,6 +114,7 @@
   const draw = () => {
     ctx.clearRect(0, 0, width, height);
     const maxDist = linkDistance();
+    const pointerActive = usePointer() && mouse.active;
 
     for (let i = 0; i < nodes.length; i += 1) {
       const a = nodes[i];
@@ -101,17 +124,19 @@
         a.y += a.vy;
         a.pulse += a.pulseSpeed;
 
-        if (mouse.active) {
+        if (pointerActive) {
           const dx = mouse.x * width - a.x;
           const dy = mouse.y * height - a.y;
           a.x += dx * 0.0008;
           a.y += dy * 0.0008;
         }
 
-        a.sparkCounter += 1;
-        if (a.sparkCounter >= a.sparkEvery) {
-          a.sparkCounter = 0;
-          if (Math.random() > 0.55) spawnSpark(a);
+        if (!isMobile()) {
+          a.sparkCounter += 1;
+          if (a.sparkCounter >= a.sparkEvery) {
+            a.sparkCounter = 0;
+            if (Math.random() > 0.6) spawnSpark(a);
+          }
         }
 
         if (a.x < 0 || a.x > width) a.vx *= -1;
@@ -140,7 +165,7 @@
     nodes.forEach((node) => {
       const glow = 0.5 + 0.5 * Math.sin(node.pulse);
 
-      if (!prefersReducedMotion) {
+      if (!prefersReducedMotion && !isMobile()) {
         ctx.beginPath();
         ctx.arc(node.x, node.y, node.r + glow * 3.5, 0, Math.PI * 2);
         ctx.strokeStyle = node.color.replace(/[\d.]+\)$/, `${0.08 + glow * 0.12})`);
@@ -154,7 +179,7 @@
       ctx.fill();
     });
 
-    if (!prefersReducedMotion) {
+    if (!prefersReducedMotion && !isMobile()) {
       drawSparks();
     }
   };
@@ -166,26 +191,28 @@
     }
   };
 
-  hero.addEventListener(
-    "mousemove",
-    (event) => {
-      const rect = hero.getBoundingClientRect();
-      mouse.x = (event.clientX - rect.left) / rect.width;
-      mouse.y = (event.clientY - rect.top) / rect.height;
-      mouse.active = true;
-    },
-    { passive: true }
-  );
+  if (usePointer()) {
+    hero.addEventListener(
+      "mousemove",
+      (event) => {
+        const rect = hero.getBoundingClientRect();
+        mouse.x = (event.clientX - rect.left) / rect.width;
+        mouse.y = (event.clientY - rect.top) / rect.height;
+        mouse.active = true;
+      },
+      { passive: true }
+    );
 
-  hero.addEventListener(
-    "mouseleave",
-    () => {
-      mouse.active = false;
-    },
-    { passive: true }
-  );
+    hero.addEventListener(
+      "mouseleave",
+      () => {
+        mouse.active = false;
+      },
+      { passive: true }
+    );
+  }
 
-  window.addEventListener("resize", resize);
+  window.addEventListener("resize", scheduleResize);
   resize();
   loop();
 
