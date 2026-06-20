@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="kasperaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5c6ff4"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#e870c2"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="54" stroke="url(#kasperaGrad)" stroke-width="4" fill="white"/>
+  <text x="60" y="72" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="42" font-weight="700" fill="url(#kasperaGrad)">K</text>
+</svg>
