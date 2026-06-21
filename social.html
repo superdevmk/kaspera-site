@@ -11,6 +11,10 @@
   <meta property="og:image" content="assets/images/kaspera-full.png">
   <meta name="twitter:card" content="summary_large_image">
   <title>Social Media — KASPERA</title>
+  <link rel="alternate" hreflang="en" href="social.html">
+  <link rel="alternate" hreflang="mk" href="mk/social.html">
+  <link rel="alternate" hreflang="sq" href="sq/social.html">
+  <link rel="alternate" hreflang="x-default" href="social.html">
   <link rel="icon" type="image/png" href="assets/images/kaspera-wordmark.png">
   <link rel="apple-touch-icon" href="assets/images/kaspera-full.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-page="social">
+<body data-page="social" data-lang="en">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
@@ -29,7 +33,7 @@
         <img src="assets/images/kaspera-wordmark.png" alt="KASPERA" class="brand-logo" width="160" height="40">
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <button class="nav-toggle" id="navToggle" data-open-label="Open menu" data-close-label="Close menu" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -42,8 +46,16 @@
     <a href="index.html" data-nav="home">Home</a>
     <a href="services.html" data-nav="services">Services</a>
     <a href="projects.html" data-nav="projects">Projects</a>
-    <a href="social.html" data-nav="social">Social Media</a>
+    <a href="social.html" data-nav="social" class="active">Social Media</a>
     <a href="contact.html" data-nav="contact">Contact</a>
+    <div class="nav-lang nav-lang--drawer" role="group" aria-label="Language">
+      <span class="nav-lang-label">Language</span>
+      <div class="nav-lang-flags">
+    <a class="nav-lang-link is-active" href="social.html" hreflang="en" lang="en" aria-label="English" aria-current="true"><img class="nav-lang-flag" src="assets/images/USA%20ICON.png" alt="" width="20" height="14" loading="lazy" decoding="async"></a>
+    <a class="nav-lang-link" href="mk/social.html" hreflang="mk" lang="mk" aria-label="Macedonian"><img class="nav-lang-flag" src="assets/images/MKD%20ICON.png" alt="" width="20" height="14" loading="lazy" decoding="async"></a>
+    <a class="nav-lang-link" href="sq/social.html" hreflang="sq" lang="sq" aria-label="Albanian"><img class="nav-lang-flag" src="assets/images/ALB%20ICON.png" alt="" width="20" height="14" loading="lazy" decoding="async"></a>
+      </div>
+    </div>
   </nav>
 
   <main id="main">
@@ -116,11 +128,12 @@
     </section>
   </main>
 
+
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
         <img src="assets/images/kaspera-wordmark.png" alt="KASPERA" class="footer-logo" width="140" height="36" loading="lazy">
-        <p class="footer-tagline">Marketing &amp; software from Skopje.</p>
+        <p class="footer-tagline">Marketing & software from Skopje.</p>
       </div>
       <nav class="footer-links" aria-label="Footer">
         <a href="services.html">Services</a>
@@ -130,7 +143,7 @@
         <a href="https://www.recycle.mk/" target="_blank" rel="noopener noreferrer">Recycle.mk</a>
         <a href="https://chipper-mousse-08aae6.netlify.app/dashboard" target="_blank" rel="noopener noreferrer">TradeFlow Demo</a>
       </nav>
-      <p>&copy; 2026 KASPERA · Skopje, North Macedonia</p>
+      <p>© 2026 KASPERA · Skopje, North Macedonia</p>
     </div>
   </footer>
 

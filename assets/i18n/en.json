@@ -1,0 +1,456 @@
+{
+  "common": {
+    "skipLink": "Skip to content",
+    "brandHomeAria": "KASPERA home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "navPrimaryAria": "Primary",
+    "footerNavAria": "Footer",
+    "backToTop": "Back to top",
+    "footerTagline": "Marketing & software from Skopje.",
+    "copyright": "© 2026 KASPERA · Skopje, North Macedonia",
+    "tradeFlowDemo": "TradeFlow Demo",
+    "openFacebook": "Open Facebook",
+    "managedByKaspera": "Managed by KASPERA",
+    "email": "Email",
+    "phone": "Phone",
+    "website": "Website",
+    "location": "Location",
+    "locationValue": "Skopje, North Macedonia",
+    "systems": "Systems",
+    "map": "Map",
+    "reporting": "Reporting",
+    "national": "National",
+    "platform": "Platform",
+    "flagship": "Flagship",
+    "enterprise": "Enterprise",
+    "mainPlatform": "Main platform"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "social": "Social Media",
+    "contact": "Contact",
+    "development": "Development"
+  },
+  "lang": {
+    "switchAria": "Language",
+    "enAria": "English",
+    "mkAria": "Macedonian",
+    "sqAria": "Albanian"
+  },
+  "meta": {
+    "home": {
+      "title": "KASPERA — Digital Marketing & Development",
+      "description": "KASPERA Skopje — Social media management, digital marketing, web and software development. Recycle.mk, TradeFlow and client work across North Macedonia.",
+      "ogTitle": "KASPERA — Digital Marketing & Development",
+      "ogDescription": "Social media, digital marketing and software development from Skopje. Recycle.mk, TradeFlow and 20+ client projects."
+    },
+    "services": {
+      "title": "Services — KASPERA",
+      "description": "Digital marketing, social media management, website and software development from KASPERA in Skopje.",
+      "ogTitle": "Services — KASPERA",
+      "ogDescription": "Digital marketing, social media management, website and software development from KASPERA in Skopje."
+    },
+    "projects": {
+      "title": "Projects — KASPERA",
+      "description": "Recycle.mk, TradeFlow and client websites built by KASPERA and Alimi Digital.",
+      "ogTitle": "Projects — KASPERA",
+      "ogDescription": "Recycle.mk, TradeFlow and client websites built by KASPERA and Alimi Digital."
+    },
+    "social": {
+      "title": "Social Media — KASPERA",
+      "description": "Facebook accounts and social media management for brands across North Macedonia.",
+      "ogTitle": "Social Media — KASPERA",
+      "ogDescription": "Facebook accounts and social media management for brands across North Macedonia."
+    },
+    "development": {
+      "title": "Development — KASPERA",
+      "description": "Software and web development through Alimi Digital, KASPERA's engineering partner.",
+      "ogTitle": "Development — KASPERA",
+      "ogDescription": "Software and web development through Alimi Digital, KASPERA's engineering partner."
+    },
+    "contact": {
+      "title": "Contact — KASPERA",
+      "description": "Get in touch with KASPERA for marketing, social media or software projects.",
+      "ogTitle": "Contact — KASPERA",
+      "ogDescription": "Get in touch with KASPERA for marketing, social media or software projects."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Skopje · North Macedonia",
+      "titleLine1": "Marketing that scales.",
+      "typewriterSizer": "Platforms that scale.",
+      "typewriterInitial": "Software that ships.",
+      "typewriterPhrases": [
+        "Software that ships.",
+        "Platforms that scale.",
+        "Brands that grow."
+      ],
+      "lead": "Website and software development, web applications, social media management, and digital marketing — for companies across North Macedonia.",
+      "viewWork": "View work",
+      "startProject": "Start a project"
+    },
+    "logoCarousel": {
+      "label": "Trusted by 20+ brands across North Macedonia",
+      "ariaLabel": "Clients and partners"
+    },
+    "overview": {
+      "label": "What we do",
+      "title": "Software, marketing, one team",
+      "intro": "Website development, custom software, and digital marketing from Skopje."
+    },
+    "pillars": {
+      "engineering": {
+        "tag": "Engineering",
+        "chips": {
+          "webApps": "Web apps",
+          "platforms": "Platforms",
+          "software": "Software"
+        },
+        "title": "Websites & software",
+        "desc": "Web apps, platforms and production systems — Recycle.mk, TradeFlow and 20+ client sites.",
+        "action": "View projects"
+      },
+      "marketing": {
+        "tag": "Marketing",
+        "chips": {
+          "social": "Social",
+          "content": "Content",
+          "campaigns": "Campaigns"
+        },
+        "title": "Social & campaigns",
+        "desc": "Social media management, content and digital marketing for brands across North Macedonia.",
+        "action": "Our services"
+      }
+    },
+    "featured": {
+      "label": "Selected work",
+      "title": "Flagship platforms",
+      "intro": "National-scale software"
+    },
+    "showcase": {
+      "recycle": {
+        "badge": "Flagship",
+        "statsAria": "Recycle.mk scale",
+        "desc": "National recycling platform with interactive map, geolocation reporting and four waste-management systems."
+      },
+      "tradeflow": {
+        "badge": "Enterprise",
+        "alt": "TradeFlow platform preview",
+        "desc": "Customs and logistics command center for declarations, shipment cases and operational analytics."
+      }
+    },
+    "clients": {
+      "label": "Client sites",
+      "title": "Websites we've shipped",
+      "recycle": {
+        "desc": "National recycling platform connecting citizens, recyclers and four waste-management systems across North Macedonia.",
+        "link": "Visit recycle.mk"
+      },
+      "mhra": {
+        "desc": "North Macedonia's HR association — events, membership and industry programs.",
+        "link": "Visit mhra.mk"
+      },
+      "mhbEvents": {
+        "desc": "Professional masterclass events on leadership and well-being.",
+        "link": "Visit mhbevents.mk"
+      },
+      "letto": {
+        "desc": "Snack brand — chips, corn snacks and sweets since 2008.",
+        "link": "Visit lettofoods.mk"
+      },
+      "euroles": {
+        "desc": "Window manufacturer serving markets across Europe.",
+        "link": "Visit euroles.com.mk"
+      },
+      "mhaRenovation": {
+        "desc": "Swiss precision in interior construction, drywall, painting and renovation.",
+        "link": "Visit mha-renovation.ch"
+      },
+      "more": {
+        "title": "See all projects",
+        "desc": "TradeFlow, client websites and the full portfolio.",
+        "link": "View everything"
+      }
+    },
+    "partnership": {
+      "label": "Development partner",
+      "title": "KASPERA × Alimi Digital",
+      "intro": "Marketing and social media from KASPERA. Websites, apps and software from Alimi Digital.",
+      "kaspera": "Marketing & social media",
+      "alimi": "Software & web development",
+      "detailsLink": "Development studio details →"
+    },
+    "leadership": {
+      "label": "Leadership",
+      "title": "The team",
+      "intro": "Strategy and engineering at KASPERA.",
+      "darko": {
+        "alt": "Darko Mickoski — CEO at Kaspera",
+        "role": "CEO at Kaspera",
+        "bio": "Brand strategy, marketing operations and client growth."
+      },
+      "atdhe": {
+        "alt": "Atdhe Alimi — CTO at Kaspera",
+        "role": "CTO at Kaspera",
+        "bio": "Engineering, product development and platform delivery."
+      }
+    },
+    "cta": {
+      "title": "Start your project",
+      "intro": "Website, software, or social media — tell us what you need.",
+      "contact": "Contact us",
+      "development": "Development studio"
+    }
+  },
+  "services": {
+    "header": {
+      "label": "Capabilities",
+      "title": "What we run and what we build",
+      "intro": "Two focused teams — marketing operations and software delivery — under one roof in Skopje."
+    },
+    "marketing": {
+      "tag": "Marketing",
+      "title": "Digital marketing",
+      "desc": "We grow your audience, shape your voice and keep your brand active across every channel that matters.",
+      "items": {
+        "social": "Social media management",
+        "content": "Content creation & scheduling",
+        "campaigns": "Digital marketing campaigns",
+        "strategy": "Brand strategy & community growth",
+        "reporting": "Performance reporting"
+      }
+    },
+    "engineering": {
+      "tag": "Engineering",
+      "title": "Websites & software",
+      "desc": "Production websites, web apps and custom platforms — from concept to launch and long-term support.",
+      "items": {
+        "websites": "Website design & development",
+        "apps": "Web & mobile applications",
+        "platforms": "Custom software platforms",
+        "uiux": "UI/UX & performance optimization",
+        "enterprise": "Enterprise-grade solutions"
+      }
+    }
+  },
+  "projects": {
+    "header": {
+      "label": "Selected work",
+      "title": "Platforms and products",
+      "intro": "National-scale systems and production software — not mockups."
+    },
+    "jump": {
+      "ariaLabel": "Jump to project",
+      "recycle": "Recycle.mk",
+      "tradeflow": "TradeFlow",
+      "clients": "Client sites"
+    },
+    "recycle": {
+      "badge": "Largest in Macedonia",
+      "alt": "Recycle.mk — national recycling platform with interactive map",
+      "title": "Recycle.mk — National Recycling Platform",
+      "desc": "The most comprehensive recycling web application in North Macedonia. Recycle.mk connects citizens, licensed recyclers, municipalities and four national waste-management systems through one interactive platform — with geolocation, photo reporting and real-time status tracking.",
+      "systems": {
+        "mareko": "Automotive waste",
+        "ekooil": "Used oils",
+        "matra": "Tyre waste",
+        "matreso": "Textile waste"
+      },
+      "pills": {
+        "map": "Interactive map",
+        "reporting": "Waste reporting",
+        "geo": "Photo + geolocation",
+        "systems": "4 recycling systems",
+        "network": "National network",
+        "mobile": "Mobile-ready"
+      },
+      "cta": "Visit recycle.mk"
+    },
+    "tradeflow": {
+      "badge": "Enterprise logistics",
+      "altHero": "TradeFlow — Logistics. Made. Easier. Customs and cargo operations platform",
+      "altDashboard": "TradeFlow unified dashboard command center",
+      "altWorkflows": "TradeFlow cases page and create case workflow",
+      "altPreview": "TradeFlow hero — Logistics made easier with command center dashboard",
+      "title": "TradeFlow — Customs & Logistics Command Center",
+      "desc": "TradeFlow modernizes outdated customs and logistics desktop systems into a responsive web platform for freight forwarders, shipping agencies and trade companies. One unified workspace for declarations, shipment cases, documents, validation workflows and operational analytics.",
+      "features": {
+        "dashboard": {
+          "title": "Unified dashboard",
+          "desc": "Real-time overview of open declarations, cleared shipments, import/export/transit volumes and weekly trends."
+        },
+        "cases": {
+          "title": "Shipment case management",
+          "desc": "Full registry with case types, senders, receivers, status tracking and detailed case views."
+        },
+        "creation": {
+          "title": "3-step case creation",
+          "desc": "Guided workflow for declaration setup, economic operator data, shipment details and document uploads."
+        },
+        "declarations": {
+          "title": "Declaration workflows",
+          "desc": "5-step declaration builder with transport, goods, financial data, items, documents and validation engine."
+        },
+        "analytics": {
+          "title": "Analytics & reports",
+          "desc": "Operational visibility through statistics, reports and live timeline for customs clearance tracking."
+        },
+        "knowledge": {
+          "title": "Knowledge base & tools",
+          "desc": "Built-in guides, workspace settings and assistant dock for day-to-day logistics operations."
+        }
+      },
+      "pills": {
+        "declarations": "Customs declarations",
+        "transit": "Import / Export / Transit",
+        "documents": "Document handling",
+        "validation": "Validation engine",
+        "forwarding": "Cargo forwarding"
+      },
+      "cta": "Explore live demo"
+    },
+    "clients": {
+      "label": "Client sites",
+      "title": "Websites we've shipped",
+      "intro": "A sample of brands brought online by our development team.",
+      "recycle": {
+        "desc": "National recycling platform connecting citizens, recyclers and four waste-management systems across North Macedonia.",
+        "link": "Visit recycle.mk"
+      },
+      "mhra": {
+        "desc": "North Macedonia's HR association — events, membership and industry programs.",
+        "link": "Visit mhra.mk"
+      },
+      "mhbEvents": {
+        "desc": "Professional masterclass events on leadership and well-being.",
+        "link": "Visit mhbevents.mk"
+      },
+      "mhraConf": {
+        "desc": "2025 leadership conference on organizational health.",
+        "link": "Visit mhraconference.mk"
+      },
+      "mhaRenovation": {
+        "desc": "Swiss precision in interior construction, drywall, painting and renovation.",
+        "link": "Visit mha-renovation.ch"
+      },
+      "euroles": {
+        "desc": "Window manufacturer serving markets across Europe.",
+        "link": "Visit euroles.com.mk"
+      },
+      "letto": {
+        "desc": "Snack brand — chips, corn snacks and sweets since 2008.",
+        "link": "Visit lettofoods.mk"
+      },
+      "illyrians": {
+        "desc": "Motorcycle and airsoft community based in North Macedonia.",
+        "link": "Visit illyrians.mk"
+      },
+      "ramadani": {
+        "desc": "Comprehensive security and investigation services in Germany.",
+        "link": "Visit security-ramadani.de"
+      }
+    }
+  },
+  "social": {
+    "header": {
+      "label": "Social operations",
+      "title": "Accounts we manage",
+      "intro": "Daily content, community and brand presence on Facebook."
+    },
+    "scrollHint": "Swipe to explore →",
+    "cards": {
+      "saraKitchen": {
+        "aria": "Sara Kitchen Skopje on Facebook",
+        "alt": "Sara Kitchen Skopje Facebook page",
+        "tagline": "Homemade taste with love · Skopje"
+      },
+      "veltek": {
+        "aria": "VELTEK on Facebook",
+        "alt": "VELTEK Facebook page"
+      },
+      "kukom": {
+        "aria": "KUKOM MK on Facebook",
+        "alt": "KUKOM MK Facebook page"
+      },
+      "mgKompanija": {
+        "aria": "MG KOMPANIJA on Facebook",
+        "alt": "MG KOMPANIJA Facebook page"
+      },
+      "hortiko": {
+        "aria": "HORTIKO on Facebook",
+        "alt": "HORTIKO Facebook page"
+      },
+      "scs": {
+        "aria": "SCS on Facebook",
+        "alt": "SCS Facebook page"
+      }
+    }
+  },
+  "development": {
+    "header": {
+      "label": "Development partner",
+      "title": "Built by Alimi Digital",
+      "intro": "KASPERA leads marketing. Alimi Digital handles design, engineering and production delivery."
+    },
+    "kaspera": "Marketing & social media",
+    "alimi": "Software & web development",
+    "kasperaHandles": {
+      "title": "KASPERA handles",
+      "desc": "Your brand presence, audience growth and day-to-day digital marketing.",
+      "items": {
+        "social": "Social media management",
+        "strategy": "Content strategy & campaigns",
+        "community": "Community & brand voice",
+        "reporting": "Client communication & reporting"
+      }
+    },
+    "alimiBuilds": {
+      "title": "Alimi Digital builds",
+      "desc": "Websites, applications and software — the same team behind Recycle.mk, TradeFlow and 20+ production sites.",
+      "items": {
+        "websites": "Website design & development",
+        "apps": "Web & mobile applications",
+        "platforms": "Custom software platforms",
+        "uiux": "UI/UX, performance & maintenance"
+      }
+    },
+    "contact": {
+      "label": "Alimi Digital",
+      "title": "Development inquiries"
+    },
+    "visitAlimi": "Visit Alimi Digital",
+    "contactKaspera": "Contact KASPERA"
+  },
+  "contact": {
+    "header": {
+      "label": "Contact",
+      "title": "Tell us about your project",
+      "intro": "Marketing, social media or a new website — we'll point you to the right team."
+    },
+    "form": {
+      "nameLabel": "Your name",
+      "namePlaceholder": "Full name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@company.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send message",
+      "note": "We typically respond within one business day."
+    },
+    "info": {
+      "officeTitle": "KASPERA — Skopje",
+      "officeAddress": "Христо Смирненски 6p.12A/1-1<br>Centar, Skopje<br>North Macedonia",
+      "companyTitle": "Company details",
+      "companyDetails": "EDB: 4080026637986<br>EMBS: 7923007",
+      "phoneTitle": "Phone",
+      "devTitle": "Software development",
+      "devTextBefore": "Web and app inquiries via our",
+      "devLink": "development partner page",
+      "devTextAfter": "."
+    }
+  }
+}

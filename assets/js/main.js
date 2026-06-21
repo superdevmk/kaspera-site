@@ -11,7 +11,7 @@
   const closeMenu = () => {
     navLinks?.classList.remove("is-open");
     navToggle?.setAttribute("aria-expanded", "false");
-    navToggle?.setAttribute("aria-label", "Open menu");
+    navToggle?.setAttribute("aria-label", navToggle?.dataset.openLabel || "Open menu");
     navBackdrop?.classList.remove("is-visible");
     navBackdrop?.setAttribute("aria-hidden", "true");
     document.body.classList.remove("menu-open");
@@ -20,7 +20,7 @@
   const openMenu = () => {
     navLinks?.classList.add("is-open");
     navToggle?.setAttribute("aria-expanded", "true");
-    navToggle?.setAttribute("aria-label", "Close menu");
+    navToggle?.setAttribute("aria-label", navToggle?.dataset.closeLabel || "Close menu");
     navBackdrop?.classList.add("is-visible");
     navBackdrop?.setAttribute("aria-hidden", "false");
     document.body.classList.add("menu-open");

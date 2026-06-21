@@ -6,11 +6,23 @@
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (prefersReducedMotion) return;
 
-  const phrases = [
+  const phrasesEl = document.getElementById("heroTypewriterPhrases");
+  let phrases = [
     "Software that ships.",
     "Platforms that scale.",
     "Brands that grow.",
   ];
+
+  if (phrasesEl) {
+    try {
+      const parsed = JSON.parse(phrasesEl.textContent);
+      if (Array.isArray(parsed) && parsed.length) {
+        phrases = parsed;
+      }
+    } catch (_) {
+      /* keep defaults */
+    }
+  }
 
   if (sizerEl) {
     sizerEl.textContent = phrases.reduce((longest, phrase) => (

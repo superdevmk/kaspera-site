@@ -1,0 +1,61 @@
+  <main id="main">
+    <header class="page-header section">
+      <div class="container">
+        <span class="section-label reveal">{{contact.header.label}}</span>
+        <h1 class="page-title title-reveal reveal">{{contact.header.title}}</h1>
+        <p class="section-intro reveal">{{contact.header.intro}}</p>
+      </div>
+    </header>
+    <section class="section section--cta" id="contact" data-section>
+      <div class="container">
+        <div class="contact-grid reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">{{contact.form.nameLabel}}</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="{{contact.form.namePlaceholder}}">
+            </div>
+            <div class="form-group">
+              <label for="email">{{contact.form.emailLabel}}</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="{{contact.form.emailPlaceholder}}">
+            </div>
+            <div class="form-group">
+              <label for="message">{{contact.form.messageLabel}}</label>
+              <textarea id="message" name="message" rows="5" required placeholder="{{contact.form.messagePlaceholder}}"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-large btn-full">
+              {{contact.form.submit}}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form-note">{{contact.form.note}}</p>
+          </form>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <div>
+                <h4>{{contact.info.officeTitle}}</h4>
+                <p>{{contact.info.officeAddress}}</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div>
+                <h4>{{contact.info.companyTitle}}</h4>
+                <p class="meta-value">{{contact.info.companyDetails}}</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div>
+                <h4>{{contact.info.phoneTitle}}</h4>
+                <a class="meta-value" href="tel:+38971875840">+389 71 875 840</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div>
+                <h4>{{contact.info.devTitle}}</h4>
+                <p>{{contact.info.devTextBefore}} <a href="development.html">{{contact.info.devLink}}</a>{{contact.info.devTextAfter}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>

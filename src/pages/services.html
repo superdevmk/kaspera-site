@@ -1,0 +1,46 @@
+  <main id="main">
+    <header class="page-header section">
+      <div class="container">
+        <span class="section-label reveal">{{services.header.label}}</span>
+        <h1 class="page-title title-reveal reveal">{{services.header.title}}</h1>
+        <p class="section-intro reveal">{{services.header.intro}}</p>
+      </div>
+    </header>
+    <section class="section section--surface" data-section>
+      <div class="container">
+        <div class="services-grid">
+          <article class="service-card reveal reveal-from-left">
+            <div class="service-card-head">
+              <span class="service-num">01</span>
+              <span class="service-tag">{{services.marketing.tag}}</span>
+            </div>
+            <h3>{{services.marketing.title}}</h3>
+            <p>{{services.marketing.desc}}</p>
+            <ul class="service-list">
+              <li>{{services.marketing.items.social}}</li>
+              <li>{{services.marketing.items.content}}</li>
+              <li>{{services.marketing.items.campaigns}}</li>
+              <li>{{services.marketing.items.strategy}}</li>
+              <li>{{services.marketing.items.reporting}}</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal reveal-from-right reveal-delay-1">
+            <div class="service-card-head">
+              <span class="service-num">02</span>
+              <span class="service-tag">{{services.engineering.tag}}</span>
+            </div>
+            <h3>{{services.engineering.title}}</h3>
+            <p>{{services.engineering.desc}}</p>
+            <ul class="service-list">
+              <li>{{services.engineering.items.websites}}</li>
+              <li>{{services.engineering.items.apps}}</li>
+              <li>{{services.engineering.items.platforms}}</li>
+              <li>{{services.engineering.items.uiux}}</li>
+              <li>{{services.engineering.items.enterprise}}</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>

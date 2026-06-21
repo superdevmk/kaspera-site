@@ -1,0 +1,456 @@
+{
+  "common": {
+    "skipLink": "Прескокни на содржина",
+    "brandHomeAria": "KASPERA почетна",
+    "openMenu": "Отвори мени",
+    "closeMenu": "Затвори мени",
+    "navPrimaryAria": "Главна навигација",
+    "footerNavAria": "Подножје",
+    "backToTop": "Назад на врв",
+    "footerTagline": "Marketing и софтвер од Скопје.",
+    "copyright": "© 2026 KASPERA · Скопје, Северна Македонија",
+    "tradeFlowDemo": "TradeFlow Demo",
+    "openFacebook": "Отвори Facebook",
+    "managedByKaspera": "Managed by KASPERA",
+    "email": "Е-пошта",
+    "phone": "Телефон",
+    "website": "Веб-страница",
+    "location": "Локација",
+    "locationValue": "Скопје, Северна Македонија",
+    "systems": "Системи",
+    "map": "Мапа",
+    "reporting": "Известување",
+    "national": "Национална",
+    "platform": "Платформа",
+    "flagship": "Flagship",
+    "enterprise": "Enterprise",
+    "mainPlatform": "Главна платформа"
+  },
+  "nav": {
+    "home": "Почетна",
+    "services": "Услуги",
+    "projects": "Проекти",
+    "social": "Социјални мрежи",
+    "contact": "Контакт",
+    "development": "Развој"
+  },
+  "lang": {
+    "switchAria": "Јазик",
+    "enAria": "English",
+    "mkAria": "Македонски",
+    "sqAria": "Shqip"
+  },
+  "meta": {
+    "home": {
+      "title": "KASPERA — Digital Marketing & Development",
+      "description": "KASPERA Скопје — социјални мрежи, digital marketing, веб и софтверски развој. Recycle.mk, TradeFlow и проекти низ Северна Македонија.",
+      "ogTitle": "KASPERA — Digital Marketing & Development",
+      "ogDescription": "Социјални мрежи, digital marketing и софтвер од Скопје. Recycle.mk, TradeFlow и 20+ клиентски проекти."
+    },
+    "services": {
+      "title": "Услуги — KASPERA",
+      "description": "Digital marketing, социјални мрежи, веб-страници и софтвер од KASPERA во Скопје.",
+      "ogTitle": "Услуги — KASPERA",
+      "ogDescription": "Digital marketing, социјални мрежи, веб-страници и софтвер од KASPERA во Скопје."
+    },
+    "projects": {
+      "title": "Проекти — KASPERA",
+      "description": "Recycle.mk, TradeFlow и клиентски веб-страници од KASPERA и Alimi Digital.",
+      "ogTitle": "Проекти — KASPERA",
+      "ogDescription": "Recycle.mk, TradeFlow и клиентски веб-страници од KASPERA и Alimi Digital."
+    },
+    "social": {
+      "title": "Социјални мрежи — KASPERA",
+      "description": "Facebook страници и управување со социјални мрежи за брендови низ Северна Македонија.",
+      "ogTitle": "Социјални мрежи — KASPERA",
+      "ogDescription": "Facebook страници и управување со социјални мрежи за брендови низ Северна Македонија."
+    },
+    "development": {
+      "title": "Развој — KASPERA",
+      "description": "Софтвер и веб-развој преку Alimi Digital, инженерски партнер на KASPERA.",
+      "ogTitle": "Развој — KASPERA",
+      "ogDescription": "Софтвер и веб-развој преку Alimi Digital, инженерски партнер на KASPERA."
+    },
+    "contact": {
+      "title": "Контакт — KASPERA",
+      "description": "Стапете во контакт со KASPERA за marketing, социјални мрежи или софтверски проекти.",
+      "ogTitle": "Контакт — KASPERA",
+      "ogDescription": "Стапете во контакт со KASPERA за marketing, социјални мрежи или софтверски проекти."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Скопје · Северна Македонија",
+      "titleLine1": "Marketing што расте.",
+      "typewriterSizer": "Платформи што растат.",
+      "typewriterInitial": "Софтвер што се испорачува.",
+      "typewriterPhrases": [
+        "Софтвер што се испорачува.",
+        "Платформи што растат.",
+        "Брендови што растат."
+      ],
+      "lead": "Веб-страници и софтвер, веб апликации, управување со социјални мрежи и digital marketing — за компании низ Северна Македонија.",
+      "viewWork": "Види проекти",
+      "startProject": "Започни проект"
+    },
+    "logoCarousel": {
+      "label": "20+ брендови низ Северна Македонија ни веруваат",
+      "ariaLabel": "Клиенти и партнери"
+    },
+    "overview": {
+      "label": "Што правиме",
+      "title": "Софтвер, marketing, еден тим",
+      "intro": "Веб-развој, custom софтвер и digital marketing од Скопје."
+    },
+    "pillars": {
+      "engineering": {
+        "tag": "Engineering",
+        "chips": {
+          "webApps": "Web apps",
+          "platforms": "Платформи",
+          "software": "Софтвер"
+        },
+        "title": "Веб-страници и софтвер",
+        "desc": "Web apps, платформи и production системи — Recycle.mk, TradeFlow и 20+ клиентски сајтови.",
+        "action": "Види проекти"
+      },
+      "marketing": {
+        "tag": "Marketing",
+        "chips": {
+          "social": "Social",
+          "content": "Содржина",
+          "campaigns": "Кампањи"
+        },
+        "title": "Социјални мрежи и кампањи",
+        "desc": "Управување со социјални мрежи, содржина и digital marketing за брендови низ Северна Македонија.",
+        "action": "Нашите услуги"
+      }
+    },
+    "featured": {
+      "label": "Избрани проекти",
+      "title": "Главни платформи",
+      "intro": "Национален софтвер"
+    },
+    "showcase": {
+      "recycle": {
+        "badge": "Flagship",
+        "statsAria": "Recycle.mk размер",
+        "desc": "Национална платформа за рециклажа со интерактивна мапа, геолокациско известување и четири системи за управување со отпад."
+      },
+      "tradeflow": {
+        "badge": "Enterprise",
+        "alt": "TradeFlow преглед на платформата",
+        "desc": "Центар за царина и логистика — декларации, shipment cases и оперативна аналитика."
+      }
+    },
+    "clients": {
+      "label": "Клиентски сајтови",
+      "title": "Веб-страници што ги испорачавме",
+      "recycle": {
+        "desc": "Национална платформа за рециклажа што ги поврзува граѓаните, рециклерите и четири системи низ Северна Македонија.",
+        "link": "Посети recycle.mk"
+      },
+      "mhra": {
+        "desc": "HR асоцијација на Северна Македонија — настани, членство и индустриски програми.",
+        "link": "Посети mhra.mk"
+      },
+      "mhbEvents": {
+        "desc": "Професионални masterclass настани за лидерство и благосостојба.",
+        "link": "Посети mhbevents.mk"
+      },
+      "letto": {
+        "desc": "Бренд за закуски — чипс, пуканки и слатки од 2008.",
+        "link": "Посети lettofoods.mk"
+      },
+      "euroles": {
+        "desc": "Производител на прозорци за пазари низ Европа.",
+        "link": "Посети euroles.com.mk"
+      },
+      "mhaRenovation": {
+        "desc": "Швајцарска прецизност во градежништво, суви ѕидови, бои и реновирање.",
+        "link": "Посети mha-renovation.ch"
+      },
+      "more": {
+        "title": "Сите проекти",
+        "desc": "TradeFlow, клиентски веб-страници и целото портфолио.",
+        "link": "Види сè"
+      }
+    },
+    "partnership": {
+      "label": "Партнер за развој",
+      "title": "KASPERA × Alimi Digital",
+      "intro": "Marketing и социјални мрежи од KASPERA. Веб-страници, apps и софтвер од Alimi Digital.",
+      "kaspera": "Marketing & social media",
+      "alimi": "Software & web development",
+      "detailsLink": "Детали за development studio →"
+    },
+    "leadership": {
+      "label": "Лидерство",
+      "title": "Тимот",
+      "intro": "Стратегија и engineering во KASPERA.",
+      "darko": {
+        "alt": "Darko Mickoski — CEO at Kaspera",
+        "role": "CEO at Kaspera",
+        "bio": "Brand strategy, marketing operations и раст на клиенти."
+      },
+      "atdhe": {
+        "alt": "Atdhe Alimi — CTO at Kaspera",
+        "role": "CTO at Kaspera",
+        "bio": "Engineering, product development и испорака на платформи."
+      }
+    },
+    "cta": {
+      "title": "Започнете проект",
+      "intro": "Веб-страница, софтвер или социјални мрежи — кажете ни што ви треба.",
+      "contact": "Контакт",
+      "development": "Development studio"
+    }
+  },
+  "services": {
+    "header": {
+      "label": "Можности",
+      "title": "Што водиме и што градиме",
+      "intro": "Два фокусирани тима — marketing operations и software delivery — под еден покрив во Скопје."
+    },
+    "marketing": {
+      "tag": "Marketing",
+      "title": "Digital marketing",
+      "desc": "Го прошируваме вашиот reach, ја градиме вашата порака и ја одржуваме вашата марка активна на сите релевантни канали.",
+      "items": {
+        "social": "Управување со социјални мрежи",
+        "content": "Креирање и планирање содржина",
+        "campaigns": "Digital marketing кампањи",
+        "strategy": "Brand strategy & community growth",
+        "reporting": "Известување за перформанси"
+      }
+    },
+    "engineering": {
+      "tag": "Engineering",
+      "title": "Веб-страници и софтвер",
+      "desc": "Production веб-страници, web apps и custom платформи — од идеја до launch и долгорочна поддршка.",
+      "items": {
+        "websites": "Дизајн и развој на веб-страници",
+        "apps": "Web & mobile applications",
+        "platforms": "Custom software платформи",
+        "uiux": "UI/UX & performance optimization",
+        "enterprise": "Enterprise-grade решенија"
+      }
+    }
+  },
+  "projects": {
+    "header": {
+      "label": "Избрани проекти",
+      "title": "Платформи и продукти",
+      "intro": "Национални системи и production софтвер — не mockups."
+    },
+    "jump": {
+      "ariaLabel": "Скокни до проект",
+      "recycle": "Recycle.mk",
+      "tradeflow": "TradeFlow",
+      "clients": "Клиентски сајтови"
+    },
+    "recycle": {
+      "badge": "Најголем во Македонија",
+      "alt": "Recycle.mk — национална платформа за рециклажа со интерактивна мапа",
+      "title": "Recycle.mk — Национална платформа за рециклажа",
+      "desc": "Најкомплетната web aplikacija за рециклажа во Северна Македонија. Recycle.mk ги поврзува граѓаните, лиценцираните рециклери, општините и четири национални системи — со геолокација, фото известување и tracking во реално време.",
+      "systems": {
+        "mareko": "Автомобилски отпад",
+        "ekooil": "Употребени масла",
+        "matra": "Отпад од гуми",
+        "matreso": "Текстилен отпад"
+      },
+      "pills": {
+        "map": "Интерактивна мапа",
+        "reporting": "Известување за отпад",
+        "geo": "Фото + геолокација",
+        "systems": "4 системи за рециклажа",
+        "network": "Национална мрежа",
+        "mobile": "Mobile-ready"
+      },
+      "cta": "Посети recycle.mk"
+    },
+    "tradeflow": {
+      "badge": "Enterprise логистика",
+      "altHero": "TradeFlow — Logistics. Made. Easier. Платформа за царина и товар",
+      "altDashboard": "TradeFlow unified dashboard command center",
+      "altWorkflows": "TradeFlow cases page and create case workflow",
+      "altPreview": "TradeFlow hero — Logistics made easier with command center dashboard",
+      "title": "TradeFlow — Центар за царина и логистика",
+      "desc": "TradeFlow ги модернизира застарените desktop системи за царина и логистика во responsive web платформа за freight forwarders, shipping agencies и trade companies. Еден workspace за декларации, shipment cases, документи, validation workflows и оперативна аналитика.",
+      "features": {
+        "dashboard": {
+          "title": "Unified dashboard",
+          "desc": "Преглед во реално време на отворени декларации, cleared shipments, import/export/transit volumes и неделни трендови."
+        },
+        "cases": {
+          "title": "Shipment case management",
+          "desc": "Целосен регistar со case types, senders, receivers, status tracking и детални case views."
+        },
+        "creation": {
+          "title": "3-step case creation",
+          "desc": "Guided workflow за declaration setup, economic operator data, shipment details и document uploads."
+        },
+        "declarations": {
+          "title": "Declaration workflows",
+          "desc": "5-step declaration builder со transport, goods, financial data, items, documents и validation engine."
+        },
+        "analytics": {
+          "title": "Analytics & reports",
+          "desc": "Оперативна видливост преку statistics, reports и live timeline за customs clearance tracking."
+        },
+        "knowledge": {
+          "title": "Knowledge base & tools",
+          "desc": "Вградени guides, workspace settings и assistant dock за секојдневни logistics operations."
+        }
+      },
+      "pills": {
+        "declarations": "Customs declarations",
+        "transit": "Import / Export / Transit",
+        "documents": "Document handling",
+        "validation": "Validation engine",
+        "forwarding": "Cargo forwarding"
+      },
+      "cta": "Истражи live demo"
+    },
+    "clients": {
+      "label": "Клиентски сајтови",
+      "title": "Веб-страници што ги испорачавме",
+      "intro": "Пример од брендови што ги доведовме online од нашиот development тим.",
+      "recycle": {
+        "desc": "Национална платформа за рециклажа што ги поврзува граѓаните, рециклерите и четири системи низ Северна Македонија.",
+        "link": "Посети recycle.mk"
+      },
+      "mhra": {
+        "desc": "HR асоцијација на Северна Македонија — настани, членство и индустриски програми.",
+        "link": "Посети mhra.mk"
+      },
+      "mhbEvents": {
+        "desc": "Професионални masterclass настани за лидерство и благосостојба.",
+        "link": "Посети mhbevents.mk"
+      },
+      "mhraConf": {
+        "desc": "2025 конференција за лидерство и организациско здравје.",
+        "link": "Посети mhraconference.mk"
+      },
+      "mhaRenovation": {
+        "desc": "Швајцарска прецизност во градежништво, суви ѕидови, бои и реновирање.",
+        "link": "Посети mha-renovation.ch"
+      },
+      "euroles": {
+        "desc": "Производител на прозорци за пазари низ Европа.",
+        "link": "Посети euroles.com.mk"
+      },
+      "letto": {
+        "desc": "Бренд за закуски — чипс, пуканки и слатки од 2008.",
+        "link": "Посети lettofoods.mk"
+      },
+      "illyrians": {
+        "desc": "Заедница за мотоцикли и airsoft базирана во Северна Македонија.",
+        "link": "Посети illyrians.mk"
+      },
+      "ramadani": {
+        "desc": "Комплетни услуги за безбедност и истраги во Германија.",
+        "link": "Посети security-ramadani.de"
+      }
+    }
+  },
+  "social": {
+    "header": {
+      "label": "Social operations",
+      "title": "Страници што ги водиме",
+      "intro": "Секојдневна содржина, community и brand presence на Facebook."
+    },
+    "scrollHint": "Лизгај за да истражиш →",
+    "cards": {
+      "saraKitchen": {
+        "aria": "Sara Kitchen Skopje on Facebook",
+        "alt": "Sara Kitchen Skopje Facebook page",
+        "tagline": "Домашен вкус со љубов · Скопје"
+      },
+      "veltek": {
+        "aria": "VELTEK on Facebook",
+        "alt": "VELTEK Facebook page"
+      },
+      "kukom": {
+        "aria": "KUKOM MK on Facebook",
+        "alt": "KUKOM MK Facebook page"
+      },
+      "mgKompanija": {
+        "aria": "MG KOMPANIJA on Facebook",
+        "alt": "MG KOMPANIJA Facebook page"
+      },
+      "hortiko": {
+        "aria": "HORTIKO on Facebook",
+        "alt": "HORTIKO Facebook page"
+      },
+      "scs": {
+        "aria": "SCS on Facebook",
+        "alt": "SCS Facebook page"
+      }
+    }
+  },
+  "development": {
+    "header": {
+      "label": "Партнер за развој",
+      "title": "Изградено од Alimi Digital",
+      "intro": "KASPERA води marketing. Alimi Digital се грижи за дизајн, engineering и production delivery."
+    },
+    "kaspera": "Marketing & social media",
+    "alimi": "Software & web development",
+    "kasperaHandles": {
+      "title": "KASPERA handles",
+      "desc": "Вашата brand presence, audience growth и секојдневен digital marketing.",
+      "items": {
+        "social": "Управување со социјални мрежи",
+        "strategy": "Content strategy & campaigns",
+        "community": "Community & brand voice",
+        "reporting": "Client communication & reporting"
+      }
+    },
+    "alimiBuilds": {
+      "title": "Alimi Digital builds",
+      "desc": "Веб-страници, applications и софтвер — istiot tim за Recycle.mk, TradeFlow и 20+ production sites.",
+      "items": {
+        "websites": "Website design & development",
+        "apps": "Web & mobile applications",
+        "platforms": "Custom software platforms",
+        "uiux": "UI/UX, performance & maintenance"
+      }
+    },
+    "contact": {
+      "label": "Alimi Digital",
+      "title": "Development inquiries"
+    },
+    "visitAlimi": "Посети Alimi Digital",
+    "contactKaspera": "Контакт KASPERA"
+  },
+  "contact": {
+    "header": {
+      "label": "Контакт",
+      "title": "Кажете ни за вашиот проект",
+      "intro": "Marketing, социјални мрежи или нова веб-страница — ќе ве насочиме кон вистинскиот тим."
+    },
+    "form": {
+      "nameLabel": "Вашето име",
+      "namePlaceholder": "Име и презиме",
+      "emailLabel": "Е-пошта",
+      "emailPlaceholder": "you@company.com",
+      "messageLabel": "Порака",
+      "messagePlaceholder": "Кажете ни за вашиот проект...",
+      "submit": "Испрати порака",
+      "note": "Обично одговараме во еден работен ден."
+    },
+    "info": {
+      "officeTitle": "KASPERA — Скопје",
+      "officeAddress": "Христо Смирненски 6p.12A/1-1<br>Centar, Skopje<br>North Macedonia",
+      "companyTitle": "Податоци за компанијата",
+      "companyDetails": "EDB: 4080026637986<br>EMBS: 7923007",
+      "phoneTitle": "Телефон",
+      "devTitle": "Софтверски развој",
+      "devTextBefore": "Прашања за web и apps преку нашата",
+      "devLink": "страница за development partner",
+      "devTextAfter": "."
+    }
+  }
+}

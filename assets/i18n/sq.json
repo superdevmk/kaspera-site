@@ -1,0 +1,456 @@
+{
+  "common": {
+    "skipLink": "Kalo te përmbajtja",
+    "brandHomeAria": "KASPERA faqja kryesore",
+    "openMenu": "Hap menunë",
+    "closeMenu": "Mbyll menunë",
+    "navPrimaryAria": "Navigimi kryesor",
+    "footerNavAria": "Fund faqe",
+    "backToTop": "Kthehu lart",
+    "footerTagline": "Marketing dhe softuer nga Shkupi.",
+    "copyright": "© 2026 KASPERA · Shkup, Maqedonia e Veriut",
+    "tradeFlowDemo": "TradeFlow Demo",
+    "openFacebook": "Hap Facebook",
+    "managedByKaspera": "Managed by KASPERA",
+    "email": "Email",
+    "phone": "Telefon",
+    "website": "Faqe interneti",
+    "location": "Vendndodhja",
+    "locationValue": "Shkup, Maqedonia e Veriut",
+    "systems": "Sisteme",
+    "map": "Harta",
+    "reporting": "Raportim",
+    "national": "Kombëtare",
+    "platform": "Platformë",
+    "flagship": "Flagship",
+    "enterprise": "Enterprise",
+    "mainPlatform": "Platforma kryesore"
+  },
+  "nav": {
+    "home": "Kryefaqja",
+    "services": "Shërbimet",
+    "projects": "Projektet",
+    "social": "Rrjetet sociale",
+    "contact": "Kontakt",
+    "development": "Zhvillimi"
+  },
+  "lang": {
+    "switchAria": "Gjuha",
+    "enAria": "English",
+    "mkAria": "Македонски",
+    "sqAria": "Shqip"
+  },
+  "meta": {
+    "home": {
+      "title": "KASPERA — Digital Marketing & Development",
+      "description": "KASPERA Shkup — menaxhim i rrjeteve sociale, marketing digjital, zhvillim web dhe softueri. Recycle.mk, TradeFlow dhe projekte në Maqedoninë e Veriut.",
+      "ogTitle": "KASPERA — Digital Marketing & Development",
+      "ogDescription": "Rrjete sociale, marketing digjital dhe softuer nga Shkupi. Recycle.mk, TradeFlow dhe 20+ projekte klientësh."
+    },
+    "services": {
+      "title": "Shërbimet — KASPERA",
+      "description": "Marketing digjital, rrjete sociale, faqe interneti dhe softuer nga KASPERA në Shkup.",
+      "ogTitle": "Shërbimet — KASPERA",
+      "ogDescription": "Marketing digjital, rrjete sociale, faqe interneti dhe softuer nga KASPERA në Shkup."
+    },
+    "projects": {
+      "title": "Projektet — KASPERA",
+      "description": "Recycle.mk, TradeFlow dhe faqe interneti klientësh nga KASPERA dhe Alimi Digital.",
+      "ogTitle": "Projektet — KASPERA",
+      "ogDescription": "Recycle.mk, TradeFlow dhe faqe interneti klientësh nga KASPERA dhe Alimi Digital."
+    },
+    "social": {
+      "title": "Rrjetet sociale — KASPERA",
+      "description": "Llogari Facebook dhe menaxhim i rrjeteve sociale për marka në Maqedoninë e Veriut.",
+      "ogTitle": "Rrjetet sociale — KASPERA",
+      "ogDescription": "Llogari Facebook dhe menaxhim i rrjeteve sociale për marka në Maqedoninë e Veriut."
+    },
+    "development": {
+      "title": "Zhvillimi — KASPERA",
+      "description": "Softuer dhe zhvillim web përmes Alimi Digital, partneri inxhinierik i KASPERA.",
+      "ogTitle": "Zhvillimi — KASPERA",
+      "ogDescription": "Softuer dhe zhvillim web përmes Alimi Digital, partneri inxhinierik i KASPERA."
+    },
+    "contact": {
+      "title": "Kontakt — KASPERA",
+      "description": "Lidhuni me KASPERA për marketing, rrjete sociale ose projekte softueri.",
+      "ogTitle": "Kontakt — KASPERA",
+      "ogDescription": "Lidhuni me KASPERA për marketing, rrjete sociale ose projekte softueri."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Shkup · Maqedonia e Veriut",
+      "titleLine1": "Marketing që rritet.",
+      "typewriterSizer": "Platforma që rriten.",
+      "typewriterInitial": "Softuer që dorëzohet.",
+      "typewriterPhrases": [
+        "Softuer që dorëzohet.",
+        "Platforma që rriten.",
+        "Marka që rriten."
+      ],
+      "lead": "Faqe interneti dhe softuer, aplikacione web, menaxhim i rrjeteve sociale dhe marketing digjital — për kompani në Maqedoninë e Veriut.",
+      "viewWork": "Shiko projektet",
+      "startProject": "Fillo një projekt"
+    },
+    "logoCarousel": {
+      "label": "20+ marka në Maqedoninë e Veriut na besojnë",
+      "ariaLabel": "Klientë dhe partnerë"
+    },
+    "overview": {
+      "label": "Çfarë bëjmë",
+      "title": "Softuer, marketing, një ekip",
+      "intro": "Zhvillim web, softuer i personalizuar dhe marketing digjital nga Shkupi."
+    },
+    "pillars": {
+      "engineering": {
+        "tag": "Engineering",
+        "chips": {
+          "webApps": "Web apps",
+          "platforms": "Platforma",
+          "software": "Softuer"
+        },
+        "title": "Faqe interneti dhe softuer",
+        "desc": "Web apps, platforma dhe sisteme production — Recycle.mk, TradeFlow dhe 20+ faqe klientësh.",
+        "action": "Shiko projektet"
+      },
+      "marketing": {
+        "tag": "Marketing",
+        "chips": {
+          "social": "Social",
+          "content": "Përmbajtje",
+          "campaigns": "Fushata"
+        },
+        "title": "Rrjete sociale dhe fushata",
+        "desc": "Menaxhim i rrjeteve sociale, përmbajtje dhe marketing digjital për marka në Maqedoninë e Veriut.",
+        "action": "Shërbimet tona"
+      }
+    },
+    "featured": {
+      "label": "Punë e zgjedhur",
+      "title": "Platformat kryesore",
+      "intro": "Softuer me shkallë kombëtare"
+    },
+    "showcase": {
+      "recycle": {
+        "badge": "Flagship",
+        "statsAria": "Shkalla e Recycle.mk",
+        "desc": "Platformë kombëtare riciklimi me hartë interaktive, raportim me geolokacion dhe katër sisteme menaxhimi mbeturinash."
+      },
+      "tradeflow": {
+        "badge": "Enterprise",
+        "alt": "Parashikim i platformës TradeFlow",
+        "desc": "Qendër doganore dhe logjistike për deklarata, shipment cases dhe analitikë operative."
+      }
+    },
+    "clients": {
+      "label": "Faqe klientësh",
+      "title": "Faqe interneti që kemi dorëzuar",
+      "recycle": {
+        "desc": "Platformë kombëtare riciklimi që lidh qytetarët, riciklerët dhe katër sisteme në Maqedoninë e Veriut.",
+        "link": "Vizito recycle.mk"
+      },
+      "mhra": {
+        "desc": "Shoqata HR e Maqedonisë së Veriut — evente, anëtarësim dhe programe industriale.",
+        "link": "Vizito mhra.mk"
+      },
+      "mhbEvents": {
+        "desc": "Evente masterclass profesionale për lidership dhe mirëqenie.",
+        "link": "Vizito mhbevents.mk"
+      },
+      "letto": {
+        "desc": "Markë snacks — chips, kornesa dhe ëmbëlsira që nga 2008.",
+        "link": "Vizito lettofoods.mk"
+      },
+      "euroles": {
+        "desc": "Prodhues dritaresh për tregje në të gjithë Evropën.",
+        "link": "Vizito euroles.com.mk"
+      },
+      "mhaRenovation": {
+        "desc": "Precizion zviceran në ndërtim të brendshëm, gips, lyerje dhe renovim.",
+        "link": "Vizito mha-renovation.ch"
+      },
+      "more": {
+        "title": "Të gjitha projektet",
+        "desc": "TradeFlow, faqe klientësh dhe portofoli i plotë.",
+        "link": "Shiko gjithçka"
+      }
+    },
+    "partnership": {
+      "label": "Partner zhvillimi",
+      "title": "KASPERA × Alimi Digital",
+      "intro": "Marketing dhe rrjete sociale nga KASPERA. Faqe interneti, apps dhe softuer nga Alimi Digital.",
+      "kaspera": "Marketing & social media",
+      "alimi": "Software & web development",
+      "detailsLink": "Detaje për development studio →"
+    },
+    "leadership": {
+      "label": "Lidership",
+      "title": "Ekipi",
+      "intro": "Strategji dhe engineering te KASPERA.",
+      "darko": {
+        "alt": "Darko Mickoski — CEO at Kaspera",
+        "role": "CEO at Kaspera",
+        "bio": "Brand strategy, marketing operations dhe rritja e klientëve."
+      },
+      "atdhe": {
+        "alt": "Atdhe Alimi — CTO at Kaspera",
+        "role": "CTO at Kaspera",
+        "bio": "Engineering, product development dhe dorëzimi i platformave."
+      }
+    },
+    "cta": {
+      "title": "Filloni projektin tuaj",
+      "intro": "Faqe interneti, softuer ose rrjete sociale — na tregoni çfarë ju nevojitet.",
+      "contact": "Kontakt",
+      "development": "Development studio"
+    }
+  },
+  "services": {
+    "header": {
+      "label": "Kapacitetet",
+      "title": "Çfarë menaxhojmë dhe çfarë ndërtojmë",
+      "intro": "Dy ekipe të fokusuara — marketing operations dhe software delivery — nën një çati në Shkup."
+    },
+    "marketing": {
+      "tag": "Marketing",
+      "title": "Marketing digjital",
+      "desc": "Rritim audiencën tuaj, formojmë zërin e markës dhe e mbajmë aktiv në çdo kanal që ka rëndësi.",
+      "items": {
+        "social": "Menaxhim i rrjeteve sociale",
+        "content": "Krijim dhe planifikim përmbajtjeje",
+        "campaigns": "Fushata marketing digjital",
+        "strategy": "Brand strategy & community growth",
+        "reporting": "Raportim performancë"
+      }
+    },
+    "engineering": {
+      "tag": "Engineering",
+      "title": "Faqe interneti dhe softuer",
+      "desc": "Faqe production, web apps dhe platforma custom — nga koncepti te launch dhe mbështetja afatgjatë.",
+      "items": {
+        "websites": "Dizajn dhe zhvillim faqesh interneti",
+        "apps": "Web & mobile applications",
+        "platforms": "Platforma custom software",
+        "uiux": "UI/UX & performance optimization",
+        "enterprise": "Zgjidhje enterprise-grade"
+      }
+    }
+  },
+  "projects": {
+    "header": {
+      "label": "Punë e zgjedhur",
+      "title": "Platforma dhe produkte",
+      "intro": "Sisteme me shkallë kombëtare dhe softuer production — jo mockups."
+    },
+    "jump": {
+      "ariaLabel": "Kalo te projekti",
+      "recycle": "Recycle.mk",
+      "tradeflow": "TradeFlow",
+      "clients": "Faqe klientësh"
+    },
+    "recycle": {
+      "badge": "Më i madhi në Maqedoni",
+      "alt": "Recycle.mk — platformë kombëtare riciklimi me hartë interaktive",
+      "title": "Recycle.mk — Platformë Kombëtare Riciklimi",
+      "desc": "Aplikacioni më i plotë web për riciklim në Maqedoninë e Veriut. Recycle.mk lidh qytetarët, riciklerët e licencuar, komunat dhe katër sisteme kombëtare — me geolokacion, raportim me foto dhe tracking në kohë reale.",
+      "systems": {
+        "mareko": "Mbeturina automobilistike",
+        "ekooil": "Vajra të përdorura",
+        "matra": "Mbeturina gome",
+        "matreso": "Mbeturina tekstile"
+      },
+      "pills": {
+        "map": "Hartë interaktive",
+        "reporting": "Raportim mbeturinash",
+        "geo": "Foto + geolokacion",
+        "systems": "4 sisteme riciklimi",
+        "network": "Rrjet kombëtar",
+        "mobile": "Mobile-ready"
+      },
+      "cta": "Vizito recycle.mk"
+    },
+    "tradeflow": {
+      "badge": "Logjistikë enterprise",
+      "altHero": "TradeFlow — Logistics. Made. Easier. Platformë doganore dhe ngarkesash",
+      "altDashboard": "TradeFlow unified dashboard command center",
+      "altWorkflows": "TradeFlow cases page and create case workflow",
+      "altPreview": "TradeFlow hero — Logistics made easier with command center dashboard",
+      "title": "TradeFlow — Qendër Doganore & Logjistike",
+      "desc": "TradeFlow modernizon sistemet e vjetra desktop për dogana dhe logjistikë në platformë web responsive për freight forwarders, shipping agencies dhe trade companies. Një workspace për deklarata, shipment cases, dokumente, validation workflows dhe analitikë operative.",
+      "features": {
+        "dashboard": {
+          "title": "Unified dashboard",
+          "desc": "Pamje në kohë reale e deklaratave të hapura, cleared shipments, import/export/transit volumes dhe trendet javore."
+        },
+        "cases": {
+          "title": "Shipment case management",
+          "desc": "Regjistër i plotë me case types, senders, receivers, status tracking dhe case views të detajuara."
+        },
+        "creation": {
+          "title": "3-step case creation",
+          "desc": "Guided workflow për declaration setup, economic operator data, shipment details dhe document uploads."
+        },
+        "declarations": {
+          "title": "Declaration workflows",
+          "desc": "5-step declaration builder me transport, goods, financial data, items, documents dhe validation engine."
+        },
+        "analytics": {
+          "title": "Analytics & reports",
+          "desc": "Dukshmëri operative përmes statistics, reports dhe live timeline për customs clearance tracking."
+        },
+        "knowledge": {
+          "title": "Knowledge base & tools",
+          "desc": "Guides të integruara, workspace settings dhe assistant dock për logistics operations çdo ditë."
+        }
+      },
+      "pills": {
+        "declarations": "Customs declarations",
+        "transit": "Import / Export / Transit",
+        "documents": "Document handling",
+        "validation": "Validation engine",
+        "forwarding": "Cargo forwarding"
+      },
+      "cta": "Eksploro live demo"
+    },
+    "clients": {
+      "label": "Faqe klientësh",
+      "title": "Faqe interneti që kemi dorëzuar",
+      "intro": "Një mostër markash që i kemi sjellë online nga ekipi ynë i zhvillimit.",
+      "recycle": {
+        "desc": "Platformë kombëtare riciklimi që lidh qytetarët, riciklerët dhe katër sisteme në Maqedoninë e Veriut.",
+        "link": "Vizito recycle.mk"
+      },
+      "mhra": {
+        "desc": "Shoqata HR e Maqedonisë së Veriut — evente, anëtarësim dhe programe industriale.",
+        "link": "Vizito mhra.mk"
+      },
+      "mhbEvents": {
+        "desc": "Evente masterclass profesionale për lidership dhe mirëqenie.",
+        "link": "Vizito mhbevents.mk"
+      },
+      "mhraConf": {
+        "desc": "Konferencë lidershipi 2025 për shëndetin organizativ.",
+        "link": "Vizito mhraconference.mk"
+      },
+      "mhaRenovation": {
+        "desc": "Precizion zviceran në ndërtim të brendshëm, gips, lyerje dhe renovim.",
+        "link": "Vizito mha-renovation.ch"
+      },
+      "euroles": {
+        "desc": "Prodhues dritaresh për tregje në të gjithë Evropën.",
+        "link": "Vizito euroles.com.mk"
+      },
+      "letto": {
+        "desc": "Markë snacks — chips, kornesa dhe ëmbëlsira që nga 2008.",
+        "link": "Vizito lettofoods.mk"
+      },
+      "illyrians": {
+        "desc": "Komunitet motoçikletash dhe airsoft me bazë në Maqedoninë e Veriut.",
+        "link": "Vizito illyrians.mk"
+      },
+      "ramadani": {
+        "desc": "Shërbime të plota sigurie dhe hetimi në Gjermani.",
+        "link": "Vizito security-ramadani.de"
+      }
+    }
+  },
+  "social": {
+    "header": {
+      "label": "Social operations",
+      "title": "Llogaritë që menaxhojmë",
+      "intro": "Përmbajtje ditore, community dhe prani e markës në Facebook."
+    },
+    "scrollHint": "Rrëshqit për të eksploruar →",
+    "cards": {
+      "saraKitchen": {
+        "aria": "Sara Kitchen Skopje on Facebook",
+        "alt": "Sara Kitchen Skopje Facebook page",
+        "tagline": "Shije shtëpie me dashuri · Shkup"
+      },
+      "veltek": {
+        "aria": "VELTEK on Facebook",
+        "alt": "VELTEK Facebook page"
+      },
+      "kukom": {
+        "aria": "KUKOM MK on Facebook",
+        "alt": "KUKOM MK Facebook page"
+      },
+      "mgKompanija": {
+        "aria": "MG KOMPANIJA on Facebook",
+        "alt": "MG KOMPANIJA Facebook page"
+      },
+      "hortiko": {
+        "aria": "HORTIKO on Facebook",
+        "alt": "HORTIKO Facebook page"
+      },
+      "scs": {
+        "aria": "SCS on Facebook",
+        "alt": "SCS Facebook page"
+      }
+    }
+  },
+  "development": {
+    "header": {
+      "label": "Partner zhvillimi",
+      "title": "Ndërtuar nga Alimi Digital",
+      "intro": "KASPERA drejton marketingun. Alimi Digital merret me dizajn, engineering dhe production delivery."
+    },
+    "kaspera": "Marketing & social media",
+    "alimi": "Software & web development",
+    "kasperaHandles": {
+      "title": "KASPERA handles",
+      "desc": "Prania e markës suaj, rritja e audiencës dhe marketing digjital i përditshëm.",
+      "items": {
+        "social": "Menaxhim i rrjeteve sociale",
+        "strategy": "Content strategy & campaigns",
+        "community": "Community & brand voice",
+        "reporting": "Client communication & reporting"
+      }
+    },
+    "alimiBuilds": {
+      "title": "Alimi Digital builds",
+      "desc": "Faqe interneti, aplikacione dhe softuer — i njëjti ekip pas Recycle.mk, TradeFlow dhe 20+ production sites.",
+      "items": {
+        "websites": "Website design & development",
+        "apps": "Web & mobile applications",
+        "platforms": "Custom software platforms",
+        "uiux": "UI/UX, performance & maintenance"
+      }
+    },
+    "contact": {
+      "label": "Alimi Digital",
+      "title": "Development inquiries"
+    },
+    "visitAlimi": "Vizito Alimi Digital",
+    "contactKaspera": "Kontakt KASPERA"
+  },
+  "contact": {
+    "header": {
+      "label": "Kontakt",
+      "title": "Na tregoni për projektin tuaj",
+      "intro": "Marketing, rrjete sociale ose faqe e re interneti — ju drejtojmë te ekipi i duhur."
+    },
+    "form": {
+      "nameLabel": "Emri juaj",
+      "namePlaceholder": "Emër i plotë",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@company.com",
+      "messageLabel": "Mesazhi",
+      "messagePlaceholder": "Na tregoni për projektin tuaj...",
+      "submit": "Dërgo mesazhin",
+      "note": "Zakonisht përgjigjemi brenda një dite pune."
+    },
+    "info": {
+      "officeTitle": "KASPERA — Shkup",
+      "officeAddress": "Христо Смирненски 6p.12A/1-1<br>Centar, Skopje<br>North Macedonia",
+      "companyTitle": "Të dhënat e kompanisë",
+      "companyDetails": "EDB: 4080026637986<br>EMBS: 7923007",
+      "phoneTitle": "Telefon",
+      "devTitle": "Zhvillim softueri",
+      "devTextBefore": "Pyetje për web dhe apps përmes",
+      "devLink": "faqes së partnerit të zhvillimit",
+      "devTextAfter": "."
+    }
+  }
+}
